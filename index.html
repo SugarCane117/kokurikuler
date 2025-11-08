@@ -14,9 +14,13 @@
 
     body {
       background-image: url(image/PETA.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       color: white;
       line-height: 1.6;
       overflow-x: hidden;
+      min-height: 100vh;
     }
 
     .isi {
@@ -31,7 +35,7 @@
       position: fixed;
       width: 100%;
       z-index: 1000;
-      padding: 20px 0;
+      padding: 15px 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
@@ -48,6 +52,7 @@
       text-decoration: none;
     }
 
+    /* MENU DESKTOP */
     .menu {
       display: flex;
       list-style: none;
@@ -62,10 +67,28 @@
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
+      padding: 8px 16px;
+      border-radius: 5px;
     }
 
     .menu a:hover {
       color: #ccc;
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* HAMBURGER MENU MOBILE */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 3px 0;
+      transition: 0.3s;
     }
 
     .utama {
@@ -76,6 +99,7 @@
       text-align: center;
       position: relative;
       overflow: hidden;
+      padding-top: 80px; /* Space for fixed header */
     }
 
     .latar {
@@ -85,7 +109,6 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-      filter: blur(5px);
       z-index: -1;
     }
 
@@ -93,12 +116,16 @@
       font-size: 48px;
       margin-bottom: 20px;
       color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
     .utama p {
       font-size: 18px;
       margin-bottom: 30px;
       color: #ddd;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .tombol {
@@ -112,8 +139,10 @@
       transition: all 0.3s;
       border: 2px solid white;
     }
+
     .tombol:hover {
-      background-color: #f0f0f0;
+      background-color: transparent;
+      color: white;
       transform: translateY(-2px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     }
@@ -161,22 +190,82 @@
       color: white;
     }
 
+    /* ==================== */
+    /* RESPONSIVE FIXES */
+    /* ==================== */
+
     @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
       .menu {
-        display: none;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+        transition: left 0.3s ease;
+      }
+
+      .menu.active {
+        left: 0;
+      }
+
+      .menu li {
+        margin: 15px 0;
+      }
+
+      .menu a {
+        font-size: 18px;
+        padding: 12px 30px;
       }
 
       .utama h1 {
-        font-size: 36px; 
+        font-size: 32px;
+        padding: 0 20px;
       }
 
       .utama p {
         font-size: 16px;
+        padding: 0 20px;
       }
       
       .tombol {
-        padding: 12px 30px;
+        padding: 12px 25px;
         font-size: 16px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      header {
+        padding: 12px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .utama h1 {
+        font-size: 28px;
+      }
+
+      .utama p {
+        font-size: 14px;
+      }
+
+      .isi {
+        padding: 0 15px;
+      }
+
+      .logo {
+        font-size: 18px;
       }
     }
   </style>
@@ -184,12 +273,20 @@
 <body>
   <header>
     <div class="isi atas">
-      <a href="" class="logo">Pembantaian westerling</a>
-      <ul class="menu">
-        <li><a href="#index.html">Beranda</a></li>
-        <li><a href="/sejarah.html">Sejarah</a></li>
-        <li><a href="/tokoh_sejarah.html">Tokoh Sejarah</a></li>
-        <li><a href="/profile.html">Profil Kami</a></li>
+      <a href="index.html" class="logo">Pembantaian Westerling</a>
+      
+      <!-- Hamburger Menu -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="menu" id="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="tokoh_sejarah.html">Tokoh Sejarah</a></li>
+        <li><a href="profile.html">Profil Kami</a></li>
       </ul>
     </div>
   </header>
@@ -198,15 +295,14 @@
     <div class="latar"></div>
     <div class="isi">
       <h1>Selamat Datang di Web</h1>
-      <p>web ini menceritakan tentang tragedi pembantaian di westerling</p>
-      <a href="" class="tombol">Lanjut</a>
+      <p>Web ini menceritakan tentang tragedi pembantaian di Westerling</p>
+      <a href="sejarah.html" class="tombol">Pelajari Sejarah</a>
     </div>
   </section>
-  <p></p>
+
   <footer>
     <div class="isi">
       <div class="isi-footer">
-        <div class="kolom-footer">
         <div class="kolom-footer">
           <h3>Kontak</h3>
           <p>Email: Ali@gmail.com</p>
@@ -216,5 +312,33 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // JavaScript untuk hamburger menu
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    mobileMenu.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu ketika klik link
+    const navLinks = document.querySelectorAll('.menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu ketika klik di luar
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.atas')) {
+        mobileMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
