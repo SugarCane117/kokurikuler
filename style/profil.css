@@ -11,7 +11,7 @@
 .container {
   width: 80%;
   margin-inline: auto;
-  color: black;
+  /* color: #ffffff; */
 }
 @media (max-width: 992px){
   .container{
@@ -119,3 +119,66 @@
 /* hero */
 
 
+
+header svg {
+  margin-bottom: -10px;
+}
+
+
+/* tentang  */
+.tentang {
+  background-color: #00cba9;
+  padding-block: 50px;
+  color: white;
+}
+
+
+
+.tentang .container > h1 {
+  /* berikan style h1 di container saja  simbol lebih */ 
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+
+
+.tentang-box .box:nth-child(1) {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+margin-bottom: 150px;
+align-items: center;
+gap: 50px;
+}
+
+
+
+.tentang-box .box:nth-child(1) img {
+  width: 300px;
+  padding: 10px 10px 0 10px;
+  background-color: #ff0606;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-inline: auto;
+}
+
+
+
+
+.tentang-box .box:nth-child(1) p {
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+
+
+
+.tentang-box .box:nth-child(1) p span{
+  font-weight: bold;
+}
+
+
+
+
+/* tentang  */

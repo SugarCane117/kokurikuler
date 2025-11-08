@@ -294,7 +294,7 @@
   <section class="utama">
     <div class="latar"></div>
     <div class="isi">
-      <h1>Selamat Datang di Web</h1>
+      <h1>Welcome <span id="element"></span><br></h1>
       <p>Web ini menceritakan tentang tragedi pembantaian di Westerling</p>
       <a href="sejarah.html" class="tombol">Pelajari Sejarah</a>
     </div>
@@ -313,6 +313,10 @@
     </div>
   </footer>
 
+
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     // JavaScript untuk hamburger menu
     const mobileMenu = document.getElementById('mobile-menu');
@@ -339,6 +343,18 @@
         navMenu.classList.remove('active');
       }
     });
+
+
+
+    var typed = new Typed('#element', {
+      strings: ["web", "kokulikuler"],
+      typeSpeed: 300,
+      loop: true,
+      backSpeed: 100,
+      showCursor: false,
+      backDelay: 1000,
+    });
   </script>
+  
 </body>
 </html>
