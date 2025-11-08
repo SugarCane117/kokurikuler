@@ -50,17 +50,53 @@
             <div class="hero-box">
                 <img src="/image/akmal_favicon.jpg" alt="hero_image">
                 <h1>
-                    hai!, saya <span>akmal</span> <br>
+                    hai!, saya <span id="element"></span> <br>
                     fullstack 
                 </h1>
             </div>
         </div>
     </div>
+    <!-- hero     -->
+    <!-- Waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#00cba9"
+        fill-opacity="1"
+        d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+<!-- Waves -->
+
+<!-- Waves -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#00cba9"
+      fill-opacity="1"
+      d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+    ></path>
+  </svg>
+<!-- Waves -->
     </header>
 <!-- hero  -->    
     <!-- buat javascript aduahhyy -->
-     <script src="/js/script.js">
+     <script src="/js/script.js"></script>
 
-     </script>
+
+
+     <!-- type js -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
+     <script>
+        var typed = new Typed('#element', {
+          strings: ["akmal", "udin"],
+          typeSpeed: 300,
+          loop: true,
+          backSpeed: 100,
+          showCursor: false,
+          backDelay: 1000,
+        });
+      </script>
 </body>
 </html>
