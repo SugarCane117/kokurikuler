@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WESTERLING</title>
+  <!-- link hubung style/index.css -->
+  <link rel="stylesheet" href="/style/index.css">
   <style>
     * {
       margin: 0;
@@ -268,6 +270,7 @@
         font-size: 18px;
       }
     }
+    
   </style>
 </head>
 <body>
@@ -294,8 +297,10 @@
   <section class="utama">
     <div class="latar"></div>
     <div class="isi">
-      <h1>Welcome <span id="element"></span><br></h1>
-      <p>Web ini menceritakan tentang tragedi pembantaian di Westerling</p>
+      <div class="welcome-teks">
+        <h1>Welcome <span>web kokurikuler</span><br></h1>
+      </div>
+      <p class="teks-tengah">Web ini menceritakan tentang tragedi pembantaian di Westerling</p>
       <a href="sejarah.html" class="tombol">Pelajari Sejarah</a>
     </div>
   </section>
@@ -316,7 +321,7 @@
 
 
 
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
   <script>
     // JavaScript untuk hamburger menu
     const mobileMenu = document.getElementById('mobile-menu');
@@ -346,14 +351,7 @@
 
 
 
-    var typed = new Typed('#element', {
-      strings: ["web", "kokulikuler"],
-      typeSpeed: 300,
-      loop: true,
-      backSpeed: 100,
-      showCursor: false,
-      backDelay: 1000,
-    });
+    
   </script>
   
 </body>
