@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WESTERLING</title>
   <!-- link hubung style/index.css -->
-  <link rel="stylesheet" href="/style/index.css">
+  <link rel="stylesheet" href="style/index.css">
   <style>
     * {
       margin: 0;
@@ -317,42 +317,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-  
-  <script>
-    // JavaScript untuk hamburger menu
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navMenu = document.getElementById('nav-menu');
-
-    mobileMenu.addEventListener('click', function() {
-      this.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-
-    // Close menu ketika klik link
-    const navLinks = document.querySelectorAll('.menu a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        navMenu.classList.remove('active');
-      });
-    });
-
-    // Close menu ketika klik di luar
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.atas')) {
-        mobileMenu.classList.remove('active');
-        navMenu.classList.remove('active');
-      }
-    });
-
-
-
-    
-  </script>
-  
+  <script src="js/script.js"></script>
 </body>
 </html>

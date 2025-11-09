@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style/profile.css">
 
     <!-- Ister EGG-->
-     <link rel="shortcut icon" href="/image/akmal_favicon.jpg" type="image/x-icon">
-
-    <!-- link css -->
-    <link rel="stylesheet" href="/style/profil.css">
+     <link rel="shortcut icon" href="/image/akmal_favicon.jpg" type="">
 
     <!-- font poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +49,7 @@
         <!-- Anggota 1 -->
         <div class="anggota-card">
           <div class="foto-anggota">
-            <img src="/image/akmal_favicon.jpg" alt="Akmal" loading="lazy">
+            <img src="image/akmal_favicon.jpg" alt="mahluk_prasejarah" loading="lazy">
           </div>
           <h3>Akmal</h3>
           <p class="role">Fullstack Developer</p>
@@ -60,7 +59,7 @@
         <!-- Anggota 2 -->
         <div class="anggota-card">
           <div class="foto-anggota">
-            <img src="/image/anggota2_dennis.jpg" alt="anggota2_dennis" loading="lazy">
+            <img src="image/anggota2_dennis.jpg" alt="anggota2_dennis" loading="lazy">
           </div>
           <h3>Dennis</h3>
           <p class="role">UI/UX Designer</p>
@@ -70,7 +69,7 @@
         <!-- Anggota 3 -->
         <div class="anggota-card">
           <div class="foto-anggota">
-            <img src="/image/placeholder.jpg" alt="Nama Anggota 3" loading="lazy">
+            <img src="image/placeholder.jpg" alt="Nama Anggota 3" loading="lazy">
           </div>
           <h3>Kevin</h3>
           <p class="role">Frontend Developer</p>
@@ -80,7 +79,7 @@
         <!-- Anggota 4 -->
         <div class="anggota-card">
           <div class="foto-anggota">
-            <img src="/image/placeholder.jpg" alt="Nama Anggota 4" loading="lazy">
+            <img src="image/placeholder.jpg" alt="Nama Anggota 4" loading="lazy">
           </div>
           <h3>Araya</h3>
           <p class="role">Backend Developer</p>
@@ -90,7 +89,7 @@
         <!-- Anggota 5 -->
         <div class="anggota-card">
           <div class="foto-anggota">
-            <img src="/image/placeholder.jpg" alt="Nama Anggota 5" loading="lazy">
+            <img src="image/placeholder.jpg" alt="Nama Anggota 5" loading="lazy">
           </div>
           <h3>Biyan</h3>
           <p class="role">Content Writer</p>
@@ -100,7 +99,7 @@
         <!-- Anggota 6 -->
         <div class="anggota-card">
           <div class="foto-anggota">
-            <img src="/image/placeholder.jpg" alt="Nama Anggota 6" loading="lazy">
+            <img src="image/placeholder.jpg" alt="Nama Anggota 6" loading="lazy">
           </div>
           <h3>Furqon</h3>
           <p class="role">Project Manager</p>
@@ -117,49 +116,49 @@
       <p class="section-subtitle">Berikut ini beberapa tools yang dipakai diproject ini!</p>
       <div class="tools">
         <div class="tools-box">
-          <img src="/image/vscode.png" alt="Tools image" loading="lazy">
+          <img src="image/vscode.png" alt="Tools image" loading="lazy">
           <div class="tools-desc">
             <h3>VS Code</h3>
             <p>code editor</p>
           </div>
         </div> 
         <div class="tools-box">
-          <img src="/image/js.png" alt="Tools Image" loading="lazy">
+          <img src="image/js.png" alt="Tools Image" loading="lazy">
           <div class="tools-desc">
             <h3>JavaScript</h3>
             <p>Interactivity</p>
           </div>
         </div>
         <div class="tools-box">
-          <img src="/image/github.png" alt="Tools Image" loading="lazy">
+          <img src="image/github.png" alt="Tools Image" loading="lazy">
           <div class="tools-desc">
             <h3>GitHub</h3>
             <p>Collaboration</p>
           </div>
         </div>
         <div class="tools-box">
-          <img src="/image/html.png" alt="Tools Image" loading="lazy">
+          <img src="image/html.png" alt="Tools Image" loading="lazy">
           <div class="tools-desc">
             <h3>HTML</h3>
             <p>Structure Builder</p>
           </div>
         </div>
         <div class="tools-box">
-          <img src="/image/css.png" alt="Tools Image" loading="lazy">
+          <img src="image/css.png" alt="Tools Image" loading="lazy">
           <div class="tools-desc">
             <h3>CSS</h3>
             <p>Styling & Design</p>
           </div>
         </div>
         <div class="tools-box">
-          <img src="/image/git.png" alt="Tools Image" loading="lazy">
+          <img src="image/git.png" alt="Tools Image" loading="lazy">
           <div class="tools-desc">
             <h3>Git</h3>
             <p>Version Control</p>
           </div>
         </div>
         <div class="tools-box">
-          <img src="/image/gitlens.jpeg" alt="Tools Image" loading="lazy">
+          <img src="image/gitlens.jpeg" alt="Tools Image" loading="lazy">
           <div class="tools-desc">
             <h3>GitLens</h3>
             <p>Productivity Tool</p>
@@ -168,35 +167,6 @@
       </div>
     </div>
   </section>
-
-  <script>
-    // JavaScript untuk hamburger menu
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navMenu = document.getElementById('nav-menu');
-
-    if (mobileMenu && navMenu) {
-      mobileMenu.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      });
-
-      // Close menu ketika klik link
-      const navLinks = document.querySelectorAll('.menu a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('active');
-          navMenu.classList.remove('active');
-        });
-      });
-
-      // Close menu ketika klik di luar
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('.atas')) {
-          mobileMenu.classList.remove('active');
-          navMenu.classList.remove('active');
-        }
-      });
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
