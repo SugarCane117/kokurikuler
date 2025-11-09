@@ -22,61 +22,120 @@
      
 </head>
 <body>
-    <header>
-
-
-
-    <!-- navbar -->
-
-    <div class="navbar">
-        <div class="container">
-            <div class="navbar-box">
-                <ul class="menu">
-                    <li><a href="/index.html">Beranda</a></li>
-                    <li><a href="#">sejarah</a></li>
-                    <li><a href="#">Tokoh sejarah</a></li>
-                    <li><a href="#">profil kami</a></li>
-                </ul>
-            </div>
+  <!-- GANTI HEADER YANG LAMA DENGAN YANG INI -->
+  <header>
+    <div class="header-nav">
+      <div class="isi atas">
+        <a href="index.html" class="logo">Pembantaian Westerling</a>
+        
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        
+        <ul class="menu" id="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="tokoh_sejarah.html">Tokoh Sejarah</a></li>
+          <li><a href="profile.html">Profil Kami</a></li>
+        </ul>
+      </div>
     </div>
 
-<!-- navbar -->
-
-
-<!-- hero  -->
+    <!-- HERO SECTION (tetap pake yang lama) -->
     <div class="hero">
-        <div class="container">
-            <div class="hero-box">
-                <img src="/image/akmal_favicon.jpg" alt="hero_image">
-                <h1>
-                    hai!, saya <span id="element"></span> <br>
-                    fullstack 
-                </h1>
-            </div>
+      <div class="container">
+        <div class="hero-box">
+          <img src="/image/akmal_favicon.jpg" alt="hero_image">
+          <h1>
+            hai!, saya <span id="element"></span> <br>
+            fullstack 
+          </h1>
         </div>
+      </div>
     </div>
-    <!-- hero     -->
-    <!-- Waves -->
+    
+    <!-- Waves Section (tetap) -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#00cba9"
-        fill-opacity="1"
-        d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
+      <path fill="#00cba9" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
-<!-- Waves -->
-
-<!-- Waves -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path
-      fill="#00cba9"
-      fill-opacity="1"
-      d="M0,64L48,85.3C96,107,192,149,288,154.7C384,160,480,128,576,138.7C672,149,768,203,864,229.3C960,256,1056,256,1152,245.3C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-    ></path>
-  </svg>
-<!-- Waves -->
-    </header>
+  </header>
+  <!-- baru -->
+  <!-- ==================== -->
+  <!-- SECTION ANGGOTA TIM -->
+  <!-- ==================== -->
+  <section class="anggota-tim">
+    <div class="container">
+      <h2 class="section-title">Tim Kami</h2>
+      <p class="section-subtitle">6 anggota yang berdedikasi dalam project ini</p>
+      
+      <div class="tim-grid">
+        <!-- Anggota 1 -->
+        <div class="anggota-card">
+          <div class="foto-anggota">
+            <img src="/image/akmal_favicon.jpg" alt="Akmal">
+          </div>
+          <h3>Akmal</h3>
+          <p class="role">Fullstack Developer</p>
+          <p class="desc">Bertanggung jawab mengembangkan frontend dan backend website</p>
+        </div>
+  
+        <!-- Anggota 2 -->
+        <div class="anggota-card">
+          <div class="foto-anggota">
+            <img src="/image/placeholder.jpg" alt="Udin">
+          </div>
+          <h3>Udin</h3>
+          <p class="role">UI/UX Designer</p>
+          <p class="desc">Mendesain interface yang user-friendly dan menarik</p>
+        </div>
+  
+        <!-- Anggota 3 -->
+        <div class="anggota-card">
+          <div class="foto-anggota">
+            <img src="/image/placeholder.jpg" alt="Nama Anggota 3">
+          </div>
+          <h3>Diky Prayoga</h3>
+          <p class="role">Frontend Developer</p>
+          <p class="desc">Mengimplementasikan design menjadi code yang responsif</p>
+        </div>
+  
+        <!-- Anggota 4 -->
+        <div class="anggota-card">
+          <div class="foto-anggota">
+            <img src="/image/placeholder.jpg" alt="Nama Anggota 4">
+          </div>
+          <h3>Nama Anggota 4</h3>
+          <p class="role">Backend Developer</p>
+          <p class="desc">Mengelola database dan server-side logic</p>
+        </div>
+  
+        <!-- Anggota 5 -->
+        <div class="anggota-card">
+          <div class="foto-anggota">
+            <img src="/image/placeholder.jpg" alt="Nama Anggota 5">
+          </div>
+          <h3>Nama Anggota 5</h3>
+          <p class="role">Content Writer</p>
+          <p class="desc">Menulis konten sejarah yang informatif dan menarik</p>
+        </div>
+  
+        <!-- Anggota 6 -->
+        <div class="anggota-card">
+          <div class="foto-anggota">
+            <img src="/image/placeholder.jpg" alt="Nama Anggota 6">
+          </div>
+          <h3>Nama Anggota 6</h3>
+          <p class="role">Project Manager</p>
+          <p class="desc">Mengkoordinasi tim dan memastikan project berjalan lancar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- baru -->
+  
     <!-- Tentang -->
      <div class="tentang">
       <div class="container">
@@ -99,7 +158,7 @@
               <div class="tools-box">
                 <img src="/image/vscode.png" alt="Tools image">
                 <div class="tools-desc">
-                  <h3>Visual studio Code</h3>
+                  <h3>VS Code</h3>
                   <p>code editor</p>
                 </div>
               </div> 
@@ -149,30 +208,40 @@
           </div>
         </div>
       </div>
-     </div>
+     </div> 
     <!-- Tentang -->
 
 
 <!-- hero  -->    
-    <!-- buat javascript aduahhyy -->
-     <script src="/js/script.js"></script>
+ 
+  <script>
+    // JavaScript untuk hamburger menu (sama kayak index.html)
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
 
+    if (mobileMenu && navMenu) {
+      mobileMenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
 
-
-     <!-- type js -->
-     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-
-
-     <script>
-        var typed = new Typed('#element', {
-          strings: ["akmal", "udin"],
-          typeSpeed: 300,
-          loop: true,
-          backSpeed: 100,
-          showCursor: false, 
-          backDelay: 1000,
+      // Close menu ketika klik link
+      const navLinks = document.querySelectorAll('.menu a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+          navMenu.classList.remove('active');
         });
-      </script>
+      });
+
+      // Close menu ketika klik di luar
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.atas')) {
+          mobileMenu.classList.remove('active');
+          navMenu.classList.remove('active');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
