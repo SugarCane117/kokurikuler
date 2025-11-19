@@ -152,7 +152,7 @@
 
 .anggota-tim {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: url(/image/PETA.jpeg);
   color: white;
 }
 
@@ -245,7 +245,7 @@
 
 .tools-section {
   padding: 80px 0;
-  background-color: #00cba9;
+  background-color: #000000;
   color: white;
 }
 
