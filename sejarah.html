@@ -14,18 +14,18 @@
 
     <style>
         header {
-            background-color: rgba(0, 0, 0, 0.77);
+            background-color: rgba(0, 0, 0, 0.485);
             backdrop-filter: blur(10px);
             position: fixed;
             width: 100%;
             z-index: 1000;
             padding: 20px 0;
-            border-bottom: 3px solid rgba(101, 101, 101, 0.69);
+            border-bottom: 3px solid rgba(29, 27, 27, 0.69);
             top: 0;
 
         }
         body {
-            margin-top: 100px;            
+            margin-top: 90px;            
         }
         .isi {
             max-width: 1200px;
@@ -62,14 +62,17 @@
         }
         div p{
             margin-left: 50px;
+            color: white;
         }
         div h3 {
             margin-left: 100px;
+            color: white;
         }
 
         div h1{
             margin: center;
             margin-left: 100px;
+            color: white;
         }
             footer {
       background-color: rgba(0, 0, 0, 0.8);
@@ -118,6 +121,26 @@
       color: white;
     }
 
+    .latar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.712));
+      z-index: -1;
+    }
+
+    body {
+            background-image: url(image/PETA.jpeg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding-top: 80px;
+            min-height: 100vh;
+        }
+
     </style>
 
 </head>
@@ -134,6 +157,10 @@
       </ul>
     </div>
 </header>
+
+ <section>
+    <div class="latar"></div>
+  </section>
 
     
     <div>
