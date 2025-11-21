@@ -18,7 +18,7 @@
     <!-- link style ke sejarah.css -->
 
 
-    
+
       <style>
         header {
             background-color: rgba(0, 0, 0, 0.485);
@@ -59,82 +59,9 @@
             margin-left: 100px;
             color: white;
         }
-        
-        
-        
-        footer {
-          background-color: rgba(0, 0, 0, 0.8);
-          backdrop-filter: blur(10px);
-          padding: 60px 0 30px;
-          border-top: 1px solid rgba(254, 254, 254, 0.1);
-        }
-
-
-
-        .isi-footer {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 40px;
-          margin-bottom: 40px;
-        }
-        
-        
-        
-        .kolom-footer h3 {
-        font-size: 20px;
-        margin-bottom: 20px;
-        position: relative;
-        padding-bottom: 10px
-        }
-
-
-
-        .kolom-footer h3::after {
-          content:;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 50px;
-          height: 2px;
-          background-color: white;
-        }
-        
-        
-
-        .kolom-footer p,
-        .kolom-footer a {
-          color: #ccc;
-          margin-bottom: 10px;
-          display: block;
-          text-decoration: none;
-          transition: color 0.3s;
-        }
-        
-        
-        .kolom-footer a:hover {
-          color: white;
-        }
-
-
-
-    .kolom-footer p, .kolom-footer a {
-      color: #ccc;
-      margin-bottom: 10px;
-      display: block;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-
-
-    .kolom-footer a:hover {
-      color: white;
-    }
-
-
 
     .latar {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -153,38 +80,115 @@
             min-height: 100vh;
         }
 
+        .isi {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.336);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .atas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+      }
+
+      /* MENU DESKTOP */
+      .menu {
+        display: flex;
+        list-style: none;
+      }
+
+      .menu li {
+        margin-left: 30px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+        padding: 8px 16px;
+        border-radius: 5px;
+      }
+
+      .menu a:hover {
+        color: #ccc;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      /* HAMBURGER MENU MOBILE */
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 3px 0;
+        transition: 0.3s;
+      }
+
+      .utama {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 80px; /* Space for fixed header */
+      }
+
 </style>
 
 </head>
 <body>  
-    <header>
-      <div class="header-nav">
-        <div class="isi atas"></div>
-        <a href="index.html" class="logo">Pembantaian Westerling</a>
-
-        <!-- humberber menu -->
-         <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <!-- humberber menu -->
-
-
-      <ul class="menu" id="nav-menu">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="sejarah.html">Sejarah</a></li>
-        <li><a href="daftar_tokoh.html">Tokoh sejarah</a></li>
-        <li><a href="profile.html">tentang kami</a></li>
-        <li><a href="#">Feedback</a></li>
-      </ul>
-    </div>
-</header>
+    
 
  <section>
     <div class="latar"></div>
   </section>
 
+  <header>
+      <div class="isi atas">
+        <a href="index.html" class="logo">Pembantaian Westerling</a>
+
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu" id="nav-menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="daftar_tokoh.html">Tokoh Sejarah</a></li>
+          <li><a href="profile.html">tentang kami</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </div>
+    </header>
     
     <div>
         <h1>Tragedi Pembantaian Westerling 1946–1947</h1>
@@ -317,19 +321,6 @@ Pembangunan monumen dan tugu peringatan korban di beberapa lokasi pembantaian.
 Pendidikan sejarah lokal di sekolah-sekolah agar generasi muda mengetahui peristiwa ini.
 Langkah-langkah ini bertujuan agar tragedi tersebut tidak dilupakan, sekaligus menuntut agar dunia internasional mengakui bahwa Tragedi Westerling adalah kejahatan kemanusiaan (crime against humanity) yang seharusnya tidak pernah terjadi lagi.</p></div>
 </p>
-
-<footer>
-    <div class="isi">
-      <div class="isi-footer">
-        <div class="kolom-footer">
-          <h3>Kontak</h3>
-          <p>Email: Ali@gmail.com</p>
-          <p>Telepon: 0895</p>
-          <p>Alamat: SMK TUNAS MEDIA DEPOK</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
