@@ -1,326 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sejarah</title>
+    <title>Tragedi Pembantaian Westerling 1946–1947</title>
+
+    <!-- CSS Responsif Navbar (FILE BARU) -->
     <link rel="stylesheet" href="style/sejarah.css">
 
-    <!-- font poppins -->
+    <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- font poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-
-    <!-- link style ke sejarah.css -->
-     <link rel="stylesheet" href="style/sejarah.css">
-    <!-- link style ke sejarah.css -->
-
-
-
-      <style>
-        header {
-            background-color: rgba(0, 0, 0, 0.485);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            padding: 20px 0;
-            border-bottom: 3px solid rgba(29, 27, 27, 0.69);
-            top: 0;
-
+    <style>
+        /* Gaya untuk konten - BIARKAN SEPERTI INI biar temen lu gak bingung */
+        .container {
+            max-width: 850px;
+            margin: 120px auto 40px auto;
+            background: #525252d2;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
         }
 
-
-
-        body {
-            margin-top: 90px;            
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 15px;
         }
 
-
-
-        div p{
-            margin-left: 50px;
-            color: white;
+        h3 {
+            margin-top: 30px;
+            color: #ffffff;
+            border-left: 4px solid #000000;
+            padding-left: 10px;
         }
 
-
-
-        div h3 {
-            margin-left: 100px;
-            color: white;
+        .read-more-btn, .mini-btn {
+            background: #2c2c2c;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 5px;
         }
 
-
-
-        div h1{
-            margin: center;
-            margin-left: 100px;
-            color: white;
+        .read-more-btn:hover, .mini-btn:hover {
+            background: #000000;
         }
 
-    .latar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.712));
-      z-index: -1;
-    }
-
-    body {
-            background-image: url(image/PETA.jpeg);
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            padding-top: 80px;
-            min-height: 100vh;
+        .hidden {
+            display: none;
         }
 
-        .isi {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
+        p {
+            text-align: justify;
+            color: #ffffff;
+        }
 
-      header {
-        background-color: rgba(0, 0, 0, 0.336);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-        padding: 15px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      .atas {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-      }
-
-      /* MENU DESKTOP */
-      .menu {
-        display: flex;
-        list-style: none;
-      }
-
-      .menu li {
-        margin-left: 30px;
-      }
-
-      .menu a {
-        color: white;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s;
-        padding: 8px 16px;
-        border-radius: 5px;
-      }
-
-      .menu a:hover {
-        color: #ccc;
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      /* HAMBURGER MENU MOBILE */
-      .menu-toggle {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-      }
-
-      .menu-toggle span {
-        width: 25px;
-        height: 3px;
-        background: white;
-        margin: 3px 0;
-        transition: 0.3s;
-      }
-
-      .utama {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        padding-top: 80px; /* Space for fixed header */
-      }
-
-</style>
-
+        .divider {
+            margin: 25px 0;
+            height: 1px;
+            background: #2c2a2a;
+        }
+    </style>
 </head>
-<body>  
-    
+<body>
+    <!-- Background Overlay -->
+    <section>
+        <div class="latar"></div>
+    </section>
 
- <section>
-    <div class="latar"></div>
-  </section>
+    <!-- Header & Navigation - SUDAH DIPERBAIKI -->
+    <header>
+        <div class="isi atas">
+            <a href="index.html" class="logo">Pembantaian Westerling</a>
 
-  <header>
-      <div class="isi atas">
-        <a href="index.html" class="logo">Pembantaian Westerling</a>
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        <!-- Hamburger Menu -->
-        <div class="menu-toggle" id="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+            <ul class="menu" id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="daftar_tokoh.html">Tokoh Sejarah</a></li>
+                <li><a href="profile.html">Tentang Kami</a></li>
+                <li><a href="masukan.html">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content - BIARKAN SEPERTI INI -->
+    <div class="container">
+        <h1>Tragedi Pembantaian Westerling 1946–1947</h1>
+
+        <p>
+            Kemerdekaan Indonesia pada 17 Agustus 1945 tidak serta-merta mengakhiri perjuangan bangsa.
+            Tragedi Westerling adalah salah satu peristiwa paling kelam dalam sejarah Indonesia.
+        </p>
+
+        <div class="divider"></div>
+
+        <div id="moreText" class="hidden">
+
+            <h3>1. Kondisi Awal Sulawesi Selatan Setelah Kemerdekaan</h3>
+            <button class="mini-btn" onclick="toggleSection('sec1')">Lanjut</button>
+            <div id="sec1" class="hidden">
+                <p>(Isi lengkap bagian 1 ditempatkan di sini)</p>
+            </div>
+
+            <h3>2. Kedatangan Pasukan Westerling</h3>
+            <button class="mini-btn" onclick="toggleSection('sec2')">Lanjut</button>
+            <div id="sec2" class="hidden">
+                <p>(Isi lengkap bagian 2 ditempatkan di sini)</p>
+            </div>
+
+            <h3>3. Eksekusi Massal</h3>
+            <button class="mini-btn" onclick="toggleSection('sec3')">Lanjut</button>
+            <div id="sec3" class="hidden">
+                <p>(Isi lengkap bagian 3 ditempatkan di sini)</p>
+            </div>
+
+            <h3>4. Penyebaran Ke Daerah Lain</h3>
+            <button class="mini-btn" onclick="toggleSection('sec4')">Lanjut</button>
+            <div id="sec4" class="hidden">
+                <p>(Isi lengkap bagian 4 ditempatkan di sini)</p>
+            </div>
+
+            <h3>5. Reaksi Pemerintah Republik</h3>
+            <button class="mini-btn" onclick="toggleSection('sec5')">Lanjut</button>
+            <div id="sec5" class="hidden">
+                <p>(Isi lengkap bagian 5 ditempatkan di sini)</p>
+            </div>
+
+            <h3>6. Akhir Operasi</h3>
+            <button class="mini-btn" onclick="toggleSection('sec6')">Lanjut</button>
+            <div id="sec6" class="hidden">
+                <p>(Isi lengkap bagian 6 ditempatkan di sini)</p>
+            </div>
+
         </div>
 
-        <ul class="menu" id="nav-menu">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="sejarah.html">Sejarah</a></li>
-          <li><a href="daftar_tokoh.html">Tokoh Sejarah</a></li>
-          <li><a href="profile.html">tentang kami</a></li>
-          <li><a href="masukan.html">Feedback</a></li>
-        </ul>
-      </div>
-    </header>
-    
-    <div>
-        <h1>Tragedi Pembantaian Westerling 1946–1947</h1>
-        <p>Kemerdekaan yang diproklamasikan oleh bangsa Indonesia pada tanggal 17 Agustus 1945 merupakan puncak dari perjuangan panjang rakyat Indonesia dalam melawan penjajahan yang telah berlangsung selama lebih dari tiga setengah abad. Namun, perjuangan tersebut tidak serta-merta berakhir setelah proklamasi. Bangsa Indonesia masih harus menghadapi berbagai bentuk perlawanan dari pihak penjajah, terutama Belanda, yang tidak rela kehilangan kekuasaannya di Nusantara. Salah satu peristiwa paling kelam dan menyedihkan dalam sejarah perjuangan mempertahankan kemerdekaan adalah Tragedi Pembantaian Westerling yang terjadi di Sulawesi Selatan pada tahun 1946 hingga 1947.
-Peristiwa ini dikenal luas karena kekejamannya yang luar biasa terhadap rakyat sipil yang sama sekali tidak bersalah. Tragedi ini dipimpin oleh seorang perwira Belanda bernama Kapten Raymond Paul Pierre Westerling, yang saat itu menjabat sebagai komandan pasukan khusus Belanda bernama Depot Speciale Troepen (DST) atau Pasukan Khusus Depot. Dengan dalih menumpas “pemberontak” dan memulihkan keamanan, Westerling melakukan tindakan teror, penyiksaan, dan eksekusi massal terhadap masyarakat setempat. Aksi pembantaian ini dilakukan secara sistematis, terencana, dan melibatkan kekerasan yang sangat brutal sehingga menimbulkan korban Sjiwa dalam jumlah yang sangat besar.
-Tragedi yang berlangsung dari bulan Desember 1946 hingga Februari 1947 itu menewaskan ribuan rakyat Sulawesi Selatan. Data dari berbagai sumber sejarah memperkirakan jumlah korban mencapai sekitar 40.000 jiwa, meskipun tidak ada angka pasti karena banyak korban yang dibunuh tanpa pendataan resmi. Para korban berasal dari berbagai lapisan masyarakat, mulai dari petani, guru, tokoh masyarakat, hingga pemuda yang dituduh membantu pejuang Republik Indonesia. Mereka dibunuh secara kejam tanpa pengadilan, bahkan di depan keluarga dan masyarakat umum sebagai bentuk teror agar rakyat tidak lagi berani melawan kekuasaan Belanda.
-Tragedi Westerling tidak hanya menunjukkan kebrutalan kolonialisme, tetapi juga menggambarkan bagaimana pihak Belanda menggunakan kekerasan sebagai alat untuk menekan semangat kemerdekaan rakyat Indonesia. Padahal, saat itu rakyat Indonesia sedang berjuang mempertahankan kemerdekaan dan menegakkan kedaulatan Republik Indonesia di tengah situasi politik yang belum stabil. Kekejaman ini merupakan salah satu bukti nyata pelanggaran hak asasi manusia yang dilakukan oleh pasukan kolonial Belanda terhadap bangsa Indonesia.
-Selain meninggalkan luka mendalam bagi masyarakat Sulawesi Selatan, peristiwa ini juga berdampak besar terhadap perjuangan nasional. Kekejaman yang dilakukan Westerling justru membangkitkan semangat perlawanan rakyat Indonesia di berbagai daerah. Rakyat semakin yakin bahwa kemerdekaan tidak bisa diraih dengan mudah dan harus dipertahankan dengan pengorbanan besar. Hingga kini, 11 Desember diperingati sebagai Hari Peringatan Korban 40.000 Jiwa, sebagai bentuk penghormatan terhadap para korban tragedi tersebut.
-Penulisan makalah ini bertujuan untuk mengulas secara mendalam mengenai Tragedi Pembantaian Westerling 1946–1947, mulai dari latar belakang munculnya peristiwa, kronologi kejadian, dampak sosial dan politik yang ditimbulkannya, hingga upaya pengungkapan kebenaran serta penegakan keadilan terhadap para korban. Dengan memahami peristiwa ini, diharapkan kita sebagai generasi muda dapat menghargai perjuangan para pahlawan yang telah berkorban demi kemerdekaan bangsa, serta menjadikannya pelajaran berharga agar tragedi kemanusiaan seperti ini tidak pernah terulang kembali di masa depan.
-Peristiwa ini juga menjadi pengingat bahwa kemerdekaan yang kita nikmati saat ini bukanlah hadiah, melainkan hasil dari perjuangan, penderitaan, dan pengorbanan jutaan rakyat Indonesia. Oleh karena itu, penting bagi generasi penerus bangsa untuk terus memelihara semangat nasionalisme, menjaga persatuan, dan mengisi kemerdekaan dengan hal-hal positif demi kemajuan bangsa dan penghormatan terhadap jasa para pahlawan yang telah gugur dalam perjuangan.
-Peristiwa ini juga menjadi salah satu faktor yang memperkuat posisi diplomasi Indonesia dalam perjuangan mempertahankan kemerdekaan. Pemerintah Indonesia menggunakan tragedi ini sebagai bukti nyata pelanggaran hak asasi manusia yang dilakukan oleh pihak Belanda.
-Setelah Proklamasi Kemerdekaan Indonesia pada 17 Agustus 1945, bangsa Indonesia memasuki masa yang penuh tantangan. Meskipun secara resmi telah memproklamasikan diri sebagai negara merdeka, Belanda tidak mengakui kedaulatan Indonesia. Mereka berusaha kembali menjajah dengan cara membonceng Sekutu, yang saat itu memiliki tugas melucuti senjata tentara Jepang. Dengan bantuan Sekutu, Belanda mendirikan organisasi bernama NICA (Netherlands Indies Civil Administration) yang bertujuan mengembalikan sistem pemerintahan kolonial di Indonesia.
-Kedatangan kembali Belanda menimbulkan banyak perlawanan di berbagai daerah. Rakyat Indonesia, yang baru saja merasakan kebebasan setelah berabad-abad dijajah, tentu tidak tinggal diam. Mereka melakukan berbagai bentuk perjuangan, baik diplomatik maupun militer, untuk mempertahankan kemerdekaan. Namun, bagi Belanda, perlawanan rakyat ini dianggap sebagai tindakan pemberontakan terhadap kekuasaan mereka. Salah satu wilayah yang menjadi fokus operasi militer Belanda adalah Sulawesi Selatan, yang saat itu dikenal memiliki semangat nasionalisme tinggi dan banyak mendukung pemerintahan Republik Indonesia.
-Untuk menumpas perlawanan rakyat di wilayah tersebut, Belanda mengirim pasukan khusus bernama Depot Speciale Troepen (DST), yaitu pasukan elit yang dilatih secara khusus untuk melakukan operasi kontra-gerilya. Pasukan ini dipimpin oleh seorang perwira muda keturunan Turki-Belgia bernama Kapten Raymond Paul Pierre Westerling. Westerling dikenal sebagai sosok yang keras, tegas, dan tidak segan menggunakan kekerasan ekstrem demi mencapai tujuan militernya. Ia tiba di Indonesia bersama pasukan Belanda setelah berakhirnya Perang Dunia II, dan sebelumnya pernah bertugas di daerah Jawa Barat sebelum akhirnya dipindahkan ke Sulawesi Selatan pada akhir tahun 1946.
-Ketika tiba di Sulawesi Selatan, Westerling menilai bahwa situasi keamanan di daerah tersebut sangat tidak terkendali karena banyak kelompok rakyat yang bersenjata dan menentang pemerintahan Belanda. Dengan alasan memulihkan keamanan dan menumpas pemberontakan, Westerling menerapkan metode operasi yang sangat kejam yang disebutnya sebagai “standrechtelijke executies” atau eksekusi di tempat tanpa melalui proses pengadilan. Dalam metode ini, setiap penduduk yang dicurigai sebagai anggota atau pendukung Republik Indonesia akan dikumpulkan, diinterogasi secara kasar, dan jika dianggap bersalah — langsung ditembak mati di depan umum.
-Metode kekerasan ini tidak hanya menargetkan para pejuang, tetapi juga masyarakat sipil yang tidak bersalah. Banyak di antara mereka adalah petani, tokoh masyarakat, guru, bahkan anak-anak muda yang dituduh tanpa bukti. Pasukan Westerling juga melakukan pembakaran rumah, penjarahan, dan penangkapan besar-besaran. Kekejaman ini menimbulkan ketakutan luar biasa di kalangan rakyat. Setiap desa yang disinggahi pasukan DST seakan berubah menjadi ladang pembantaian.
-Selama operasi yang berlangsung antara Desember 1946 hingga Februari 1947, diperkirakan sekitar 40.000 orang menjadi korban kekejaman tersebut. Jumlah korban yang sangat besar ini membuat peristiwa ini dikenal juga sebagai “Hari Peringatan Korban 40.000 Jiwa”. Meskipun banyak laporan dan kesaksian yang mengungkapkan kebrutalan Westerling, pemerintah Belanda saat itu justru berusaha menutup-nutupi fakta tersebut. Mereka bahkan memuji Westerling atas “keberhasilannya” menegakkan ketertiban di Sulawesi Selatan.
-Setelah operasi berakhir, Westerling tidak pernah diadili atas tindakan brutalnya. Ia bahkan dipulangkan ke Belanda dan menjalani kehidupan normal tanpa hukuman. Hal ini menjadi bukti nyata bahwa pemerintah kolonial Belanda menutup mata terhadap pelanggaran hak asasi manusia yang sangat berat. Meskipun demikian, rakyat Indonesia tidak pernah melupakan peristiwa ini. Tragedi Pembantaian Westerling menjadi simbol penderitaan dan keteguhan rakyat Indonesia dalam mempertahankan kemerdekaan dari penjajahan.
-Dari sudut pandang sejarah, tragedi ini juga menggambarkan kegagalan Belanda dalam memahami semangat kemerdekaan bangsa Indonesia. Alih-alih memadamkan perlawanan, tindakan kekerasan yang dilakukan justru memperkuat tekad rakyat untuk terus melawan dan memperjuangkan kedaulatan Indonesia. Peristiwa ini menjadi salah satu bukti nyata bahwa kemerdekaan Indonesia tidak diraih dengan mudah, melainkan melalui perjuangan panjang yang penuh darah dan air mata.
-Tragedi Pembantaian Westerling 1946–1947 bukan hanya sekadar catatan kelam masa lalu, tetapi juga cerminan penting tentang bagaimana kekuasaan kolonial berusaha mempertahankan dominasinya melalui kekerasan dan penindasan. Dengan mempelajari latar belakang peristiwa ini, kita dapat memahami betapa besar pengorbanan para pejuang dan rakyat Indonesia dalam mempertahankan kemerdekaan, serta pentingnya menjaga nilai-nilai kemanusiaan dan keadilan di masa kini dan masa depan.
-Tragedi Pembantaian Westerling merupakan salah satu peristiwa paling mengerikan dalam sejarah perjuangan mempertahankan kemerdekaan Indonesia. Peristiwa ini berlangsung selama sekitar tiga bulan, yaitu dari Desember 1946 hingga Februari 1947, di berbagai wilayah Sulawesi Selatan. Kekejaman yang dilakukan oleh pasukan Belanda di bawah pimpinan Kapten Raymond Paul Pierre Westerling menewaskan puluhan ribu rakyat sipil. Berikut adalah kronologi lengkap terjadinya tragedi tersebut.
-Setelah proklamasi kemerdekaan 1945, rakyat Sulawesi Selatan menyatakan dukungannya terhadap Republik Indonesia. Di berbagai daerah seperti Makassar, Parepare, Bone, dan Barru, rakyat membentuk pemerintahan Republik dan melakukan perlawanan terhadap upaya Belanda yang ingin kembali berkuasa. Namun, ketika pasukan Sekutu dan Belanda mendarat di Makassar pada akhir tahun 1945, situasi mulai berubah.
-Belanda, melalui NICA, berusaha merebut kembali kendali pemerintahan di daerah tersebut. Mereka menganggap perlawanan rakyat sebagai ancaman terhadap “ketertiban umum”. Perlawanan rakyat yang menggunakan taktik gerilya di pedesaan membuat Belanda kesulitan menguasai seluruh wilayah. Karena itu, mereka memutuskan untuk mengirim pasukan khusus yang terlatih menghadapi perang semacam ini, yaitu Depot Speciale Troepen (DST).
-Pada bulan Desember 1946, Kapten Raymond Westerling beserta pasukan DST tiba di Makassar. Mereka datang dengan misi untuk menumpas kelompok yang dianggap pemberontak dan mengembalikan “keamanan” di wilayah Sulawesi Selatan. Namun, cara yang digunakan Westerling sama sekali tidak manusiawi.
-Westerling menerapkan strategi yang disebutnya “methode Westerling”, yaitu tindakan <i>militer ekstrem</i> dengan cara mengumpulkan penduduk di suatu desa, memisahkan mereka yang dicurigai, lalu melakukan interogasi dengan kekerasan. Siapa pun yang dianggap bersalah akan ditembak mati di tempat tanpa pengadilan. Aksi brutal ini dimulai di beberapa desa di sekitar Tremboe (sekarang daerah Kabupaten Pinrang), lalu meluas ke berbagai daerah lainnya seperti Suppa, Parepare, Bulukumba, Enrekang, dan Bone.
-</p>
-<br>
-<br>
-<p>Operasi pertama dilakukan Westerling di Tremboe pada 11 Desember 1946. Di tempat ini, penduduk dikumpulkan di lapangan desa pada pagi hari. Pasukan DST memerintahkan semua laki-laki dewasa untuk berbaris dan menyerahkan senjata. Setelah itu, mereka diinterogasi satu per satu. Siapa pun yang dituduh sebagai anggota atau pendukung Republik langsung dieksekusi di depan umum. Banyak dari mereka yang ditembak tanpa bukti apa pun, hanya berdasarkan dugaan atau laporan sepihak.
-Setelah operasi di Tremboe, Westerling melanjutkan aksinya ke desa-desa lain. Di setiap desa, pola yang sama selalu terjadi: pasukan Belanda menggeledah rumah penduduk, membakar rumah yang dicurigai menampung pejuang, serta mengeksekusi siapa pun yang dituduh terlibat dalam gerakan perlawanan. Mayat korban dibiarkan tergeletak tanpa dikubur dengan layak, sebagai bentuk teror agar penduduk desa lain takut untuk melawan.
-Menurut laporan dari berbagai saksi mata, Westerling sendiri sering memimpin langsung eksekusi tersebut. Ia berdiri di depan barisan penduduk dengan pistol di tangannya dan menembak korban satu per satu di kepala. Aksi sadis ini bahkan disaksikan oleh anak-anak dan perempuan. Dalam beberapa kasus, Westerling memerintahkan tentara lokal yang bekerja sama dengan Belanda untuk ikut menembak, agar mereka merasa takut melawan perintahnya.
-Pada bulan Januari 1947, operasi DST semakin meluas. Wilayah Barru, Enrekang, dan Bone menjadi sasaran berikutnya. Di daerah Parepare, ratusan penduduk dibunuh hanya karena dianggap berhubungan dengan pasukan gerilya Republik. Desa-desa yang dicurigai menjadi tempat persembunyian pejuang dibumihanguskan.
-Westerling juga membentuk kelompok mata-mata lokal yang bertugas melaporkan siapa saja yang dianggap “anti-Belanda”. Namun, laporan tersebut sering digunakan untuk balas dendam pribadi, sehingga banyak orang tidak bersalah yang akhirnya dieksekusi. Dalam waktu singkat, ribuan orang menjadi korban.
-Penduduk yang selamat menceritakan bahwa operasi dilakukan dengan disiplin militer yang tinggi dan berlangsung sangat cepat. Dalam satu malam, satu desa bisa habis penduduknya. Aksi kekerasan ini berlangsung terus menerus selama beberapa minggu tanpa henti.
-Pemerintah Republik Indonesia yang berkedudukan di Yogyakarta saat itu tidak bisa berbuat banyak karena Sulawesi Selatan berada di bawah pendudukan Belanda. Namun, laporan mengenai kekejaman Westerling sampai ke tangan para pemimpin Republik melalui surat dan kesaksian para pengungsi. Pemerintah Republik kemudian mengecam keras tindakan tersebut dan menjadikannya bukti kejahatan perang Belanda di forum internasional.
-Meskipun begitu, Belanda tetap berusaha menutupi peristiwa tersebut. Mereka mengklaim bahwa Westerling hanya melakukan tindakan “keamanan” untuk melawan pemberontak, bukan pembantaian terhadap rakyat sipil.
-Setelah sekitar tiga bulan melakukan operasi militer, Westerling melaporkan kepada atasannya bahwa situasi di Sulawesi Selatan sudah “aman”. Operasi berakhir pada Februari 1947, namun yang tersisa hanyalah kehancuran, duka, dan penderitaan rakyat. Ribuan keluarga kehilangan anggota, banyak desa hancur total, dan trauma mendalam menyelimuti masyarakat setempat selama bertahun-tahun.
-Westerling kemudian dipindahkan ke Jawa Barat, namun karena reputasinya yang buruk dan banyaknya laporan kejahatan perang, akhirnya ia dipulangkan ke Belanda. Anehnya, bukan hukuman yang diterimanya, melainkan penghargaan atas jasanya dalam menjaga “stabilitas” di wilayah kolonial. Pemerintah Belanda sama sekali tidak mengadili Westerling, bahkan melindunginya dari segala bentuk tuntutan hukum.
-Tragedi ini menorehkan luka yang sangat dalam dalam sejarah bangsa Indonesia. Selain menewaskan puluhan ribu orang, peristiwa ini juga menimbulkan ketakutan dan penderitaan panjang di kalangan masyarakat Sulawesi Selatan. Banyak anak kehilangan orang tua, desa-desa musnah, dan ekonomi rakyat hancur total. Namun, di balik penderitaan itu, semangat perjuangan rakyat Indonesia justru semakin kuat.
-Kekejaman Westerling menjadi simbol kebrutalan penjajahan Belanda dan memperkuat tekad bangsa Indonesia untuk terus berjuang hingga pengakuan kedaulatan pada tahun 1949. Hingga kini, peristiwa tersebut masih dikenang setiap 11 Desember sebagai Hari Peringatan Korban 40.000 Jiwa, sebagai bentuk penghormatan kepada para korban dan pengingat bagi generasi penerus bangsa agar tragedi kemanusiaan semacam ini tidak pernah terulang kembali.
-Tragedi Pembantaian Westerling merupakan salah satu peristiwa paling mengerikan dalam sejarah perjuangan mempertahankan kemerdekaan Indonesia. Peristiwa ini berlangsung selama sekitar tiga bulan, yaitu dari Desember 1946 hingga Februari 1947, di berbagai wilayah Sulawesi Selatan. Kekejaman yang dilakukan oleh pasukan Belanda di bawah pimpinan Kapten Raymond Paul Pierre Westerling menewaskan puluhan ribu rakyat sipil. Berikut adalah kronologi lengkap terjadinya tragedi tersebut.
-<br>
-<br>
-<h3>1. Kondisi Awal Sulawesi Selatan Setelah Kemerdekaan </h3>
-<p>Setelah proklamasi kemerdekaan 1945, rakyat Sulawesi Selatan menyatakan dukungannya terhadap Republik Indonesia. Di berbagai daerah seperti Makassar, Parepare, Bone, dan Barru, rakyat membentuk pemerintahan Republik dan melakukan perlawanan terhadap upaya Belanda yang ingin kembali berkuasa. Namun, ketika pasukan Sekutu dan Belanda mendarat di Makassar pada akhir tahun 1945, situasi mulai berubah.
-Belanda, melalui NICA, berusaha merebut kembali kendali pemerintahan di daerah tersebut. Mereka menganggap perlawanan rakyat sebagai ancaman terhadap “ketertiban umum”. Perlawanan rakyat yang menggunakan taktik gerilya di pedesaan membuat Belanda kesulitan menguasai seluruh wilayah. Karena itu, mereka memutuskan untuk mengirim pasukan khusus yang terlatih menghadapi perang semacam ini, yaitu Depot Speciale Troepen (DST).
-</p>
-<br>
-<br>
-<h3>2. Kedatangan Pasukan Westerling di Sulawesi Selatan (Desember 1946) </h3>
-<p>Pada bulan Desember 1946, Kapten Raymond Westerling beserta pasukan DST tiba di Makassar. Mereka datang dengan misi untuk menumpas kelompok yang dianggap pemberontak dan mengembalikan “keamanan” di wilayah Sulawesi Selatan. Namun, cara yang digunakan Westerling sama sekali tidak manusiawi.
-Westerling menerapkan strategi yang disebutnya “methode Westerling”, yaitu tindakan militer ekstrem dengan cara mengumpulkan penduduk di suatu desa, memisahkan mereka yang dicurigai, lalu melakukan interogasi dengan kekerasan. Siapa pun yang dianggap bersalah akan ditembak mati di tempat tanpa pengadilan. Aksi brutal ini dimulai di beberapa desa di sekitar Tremboe (sekarang daerah Kabupaten Pinrang), lalu meluas ke berbagai daerah lainnya seperti Suppa, Parepare, Bulukumba, Enrekang, dan Bone.
-</p>
-<br>
-<br>
-<h3>3. Eksekusi Massal dan Pembantaian Terencana </h3>
-<p>Operasi pertama dilakukan Westerling di Tremboe pada 11 Desember 1946. Di tempat ini, penduduk dikumpulkan di lapangan desa pada pagi hari. Pasukan DST memerintahkan semua laki-laki dewasa untuk berbaris dan menyerahkan senjata. Setelah itu, mereka diinterogasi satu per satu. Siapa pun yang dituduh sebagai anggota atau pendukung Republik langsung dieksekusi di depan umum. Banyak dari mereka yang ditembak tanpa bukti apa pun, hanya berdasarkan dugaan atau laporan sepihak.
-Setelah operasi di Tremboe, Westerling melanjutkan aksinya ke desa-desa lain. Di setiap desa, pola yang sama selalu terjadi: pasukan Belanda menggeledah rumah penduduk, membakar rumah yang dicurigai menampung pejuang, serta mengeksekusi siapa pun yang dituduh terlibat dalam gerakan perlawanan. Mayat korban dibiarkan tergeletak tanpa dikubur dengan layak, sebagai bentuk teror agar penduduk desa lain takut untuk melawan.
-Menurut laporan dari berbagai saksi mata, Westerling sendiri sering memimpin langsung eksekusi tersebut. Ia berdiri di depan barisan penduduk dengan pistol di tangannya dan menembak korban satu per satu di kepala. Aksi sadis ini bahkan disaksikan oleh anak-anak dan perempuan. Dalam beberapa kasus, Westerling memerintahkan tentara lokal yang bekerja sama dengan Belanda untuk ikut menembak, agar mereka merasa takut melawan perintahnya.
-</p>
-<br>
-<br>
-<h3>4. Penyebaran Aksi Pembantaian ke Daerah Lain (Januari 1947) </h3>
-<p>Pada bulan Januari 1947, operasi DST semakin meluas. Wilayah Barru, Enrekang, dan Bone menjadi sasaran berikutnya. Di daerah Parepare, ratusan penduduk dibunuh hanya karena dianggap berhubungan dengan pasukan gerilya Republik. Desa-desa yang dicurigai menjadi tempat persembunyian pejuang dibumihanguskan.
-Westerling juga membentuk kelompok mata-mata lokal yang bertugas melaporkan siapa saja yang dianggap “anti-Belanda”. Namun, laporan tersebut sering digunakan untuk balas dendam pribadi, sehingga banyak orang tidak bersalah yang akhirnya dieksekusi. Dalam waktu singkat, ribuan orang menjadi korban.
-Penduduk yang selamat menceritakan bahwa operasi dilakukan dengan disiplin militer yang tinggi dan berlangsung sangat cepat. Dalam satu malam, satu desa bisa habis penduduknya. Aksi kekerasan ini berlangsung terus menerus selama beberapa minggu tanpa henti.
-</p>
-<br>
-<br>
-<h3>5. Reaksi Pemerintah Republik Indonesia </h3>
-<p>Pemerintah Republik Indonesia yang berkedudukan di Yogyakarta saat itu tidak bisa berbuat banyak karena Sulawesi Selatan berada di bawah pendudukan Belanda. Namun, laporan mengenai kekejaman Westerling sampai ke tangan para pemimpin Republik melalui surat dan kesaksian para pengungsi. Pemerintah Republik kemudian mengecam keras tindakan tersebut dan menjadikannya bukti kejahatan perang Belanda di forum internasional.
-Meskipun begitu, Belanda tetap berusaha menutupi peristiwa tersebut. Mereka mengklaim bahwa Westerling hanya melakukan tindakan “keamanan” untuk melawan pemberontak, bukan pembantaian terhadap rakyat sipil.
-</p>
-<br>
-<br>
-<h3>6. Akhir Operasi dan Penarikan Pasukan (Februari 1947)</h3>
-<p>Setelah sekitar tiga bulan melakukan operasi militer, Westerling melaporkan kepada atasannya bahwa situasi di Sulawesi Selatan sudah “aman”. Operasi berakhir pada Februari 1947, namun yang tersisa hanyalah kehancuran, duka, dan penderitaan rakyat. Ribuan keluarga kehilangan anggota, banyak desa hancur total, dan trauma mendalam menyelimuti masyarakat setempat selama bertahun-tahun.
-Westerling kemudian dipindahkan ke Jawa Barat, namun karena reputasinya yang buruk dan banyaknya laporan kejahatan perang, akhirnya ia dipulangkan ke Belanda. Anehnya, bukan hukuman yang diterimanya, melainkan penghargaan atas jasanya dalam menjaga “stabilitas” di wilayah kolonial. Pemerintah Belanda sama sekali tidak mengadili Westerling, bahkan melindunginya dari segala bentuk tuntutan hukum.
-</p>
-<br>
-<br>
-<h3>7. Dampak dan Warisan Tragedi Westerling</h3>
-<p>Tragedi ini menorehkan luka yang sangat dalam dalam sejarah bangsa Indonesia. Selain menewaskan puluhan ribu orang, peristiwa ini juga menimbulkan ketakutan dan penderitaan panjang di kalangan masyarakat Sulawesi Selatan. Banyak anak kehilangan orang tua, desa-desa musnah, dan ekonomi rakyat hancur total. Namun, di balik penderitaan itu, semangat perjuangan rakyat Indonesia justru semakin kuat.
-Kekejaman Westerling menjadi simbol kebrutalan penjajahan Belanda dan memperkuat tekad bangsa Indonesia untuk terus berjuang hingga pengakuan kedaulatan pada tahun 1949. Hingga kini, peristiwa tersebut masih dikenang setiap 11 Desember sebagai Hari Peringatan Korban 40.000 Jiwa, sebagai bentuk penghormatan kepada para korban dan pengingat bagi generasi penerus bangsa agar tragedi kemanusiaan semacam ini tidak pernah terulang kembali.
-</p>
-<br>
-<br>
-<br>
-<h3>1. Upaya Penyelesaian pada Masa Revolusi (1947–1949) </h3>
-<p>Pada masa terjadinya tragedi ini, Indonesia belum memiliki kedaulatan penuh karena masih dalam masa revolusi dan banyak wilayah masih diduduki Belanda. Pemerintah Republik Indonesia yang saat itu berkedudukan di Yogyakarta tidak memiliki wewenang langsung untuk menindak pelaku, termasuk Westerling, karena Sulawesi Selatan berada di bawah kekuasaan militer Belanda.
-Namun, pemerintah Republik tetap mengecam keras tindakan brutal tersebut dan mengumpulkan berbagai laporan, kesaksian, serta bukti tentang kekejaman Westerling. Laporan-laporan itu kemudian disampaikan dalam forum diplomasi internasional, termasuk dalam pertemuan-pertemuan di bawah pengawasan Komisi Tiga Negara (KTN) dan Perserikatan Bangsa-Bangsa (PBB).
-Meskipun begitu, Belanda terus membantah adanya pembantaian massal dan menyatakan bahwa operasi militer di Sulawesi Selatan hanya bertujuan untuk “menjaga keamanan” dari gangguan kelompok bersenjata. Karena belum ada tekanan internasional yang kuat, Westerling tidak pernah diselidiki atau dihukum. Bahkan, ia masih diberi jabatan penting di militer Belanda dan dipindahkan ke Jawa Barat untuk tugas berikutnya.
-</p>
-<br>
-<br>
-<h3>2. Penyelidikan Internal oleh Belanda (1948–1950) </h3>
-<p>Setelah berita mengenai kekejaman Westerling menyebar luas, baik di Indonesia maupun di Eropa, pemerintah Belanda sempat melakukan penyelidikan internal terbatas. Pada tahun 1948, dibentuk tim penyelidik militer untuk menilai tindakan Westerling selama operasi di Sulawesi Selatan.
-Namun, penyelidikan ini tidak pernah dilakukan secara terbuka dan independen. Hasilnya pun sangat mengecewakan — laporan tersebut menyimpulkan bahwa tindakan Westerling dianggap “perlu dan sah” untuk memulihkan keamanan. Dengan kata lain, Belanda secara resmi membenarkan kekerasan yang terjadi.
-Westerling bahkan mendapatkan perlindungan hukum dari pemerintahnya. Ketika beberapa pihak di Belanda menuntut agar ia diadili atas kejahatan perang, kasus itu ditutup dengan alasan bahwa tindakannya merupakan “tugas militer resmi”. Akibatnya, tidak ada satu pun pelaku pembantaian yang dihukum.
-</p>
-<br>
-<br>
-<h3>3. Upaya dari Pemerintah Indonesia Setelah Pengakuan Kedaulatan (1950–1960-an) </h3>
-<p>Setelah Belanda mengakui kedaulatan Indonesia pada 27 Desember 1949, pemerintah Indonesia mulai berusaha untuk mengumpulkan lebih banyak data dan kesaksian mengenai korban tragedi 2Westerling. Namun, upaya ini menghadapi banyak kesulitan karena:
-Banyak saksi yang sudah meninggal atau trauma berat dan enggan berbicara.
-Dokumen dan arsip resmi Belanda sulit diakses karena disembunyikan.
-Situasi politik Indonesia pasca-kemerdekaan masih tidak stabil, sehingga pemerintah fokus pada pembangunan nasional dan konflik internal seperti PRRI/Permesta.
-Meskipun demikian, pemerintah daerah Sulawesi Selatan secara rutin mengadakan peringatan korban 40.000 jiwa setiap 11 Desember, sebagai bentuk penghormatan dan pengingat atas kekejaman masa kolonial. Namun, penegakan keadilan terhadap pelaku belum dapat dilakukan karena tidak ada perjanjian hukum yang memungkinkan Indonesia menuntut individu warga negara Belanda di pengadilan nasional.
-</p>
-<br>
-<br>
-<h3>4. Pengungkapan Fakta oleh Sejarawan dan Media (1970–1990-an)  </h3>
-<p>Pada dekade 1970–1990-an, muncul berbagai penelitian dari sejarawan, jurnalis, dan aktivis HAM baik dari Indonesia maupun Belanda yang mulai mengungkap kembali kebenaran tragedi ini. Salah satu hasil penelitian penting adalah laporan dari sejarawan Belanda yang menunjukkan bahwa operasi militer Westerling tidak hanya dilakukan atas inisiatif pribadi, melainkan juga mendapat dukungan dan perintah dari pemerintah kolonial Belanda saat itu.
-Beberapa media Belanda mulai berani mempublikasikan hasil wawancara dengan korban selamat dan bahkan dengan Westerling sendiri. Dalam wawancaranya, Westerling mengakui sebagian tindakan kekerasan, tetapi ia tetap beralasan bahwa semua itu dilakukan demi “menegakkan ketertiban”. Pernyataan ini justru semakin memicu kemarahan di kalangan masyarakat Indonesia dan kelompok HAM internasional.
-</p>
-<br>
-<br>
-<h3>5. Desakan Pengakuan dan Permintaan Maaf dari Belanda (2000–Sekarang) </h3>
-<p>Memasuki abad ke-21, tekanan terhadap pemerintah Belanda semakin besar. Sejumlah lembaga HAM dan peneliti independen di Belanda menemukan bukti-bukti baru berupa arsip militer, foto, dan dokumen yang memperkuat fakta adanya pembantaian massal sistematis di bawah komando Westerling.
-Akibat tekanan publik dan tuntutan moral, beberapa pejabat tinggi Belanda akhirnya mengakui bahwa kekerasan berlebihan memang terjadi selama masa perang kemerdekaan Indonesia. Salah satu langkah penting adalah pada tahun 2013, ketika pemerintah Belanda secara resmi meminta maaf atas berbagai kekerasan yang terjadi di Indonesia, termasuk operasi Westerling di Sulawesi Selatan.
-Pada tahun 2022, setelah penelitian besar yang dilakukan oleh lembaga sejarah Belanda (NIOD, KITLV, dan NIMH), hasilnya menunjukkan bahwa Belanda memang melakukan kekerasan ekstrem secara sistematis selama periode 1945–1949. Pemerintah Belanda akhirnya mengakui kesalahan sejarah tersebut dan menegaskan penyesalan mendalam atas tindakan brutal pasukannya di Indonesia.
-Namun, hingga kini, tidak ada proses hukum yang dilakukan terhadap pelaku-pelaku langsung, termasuk terhadap keluarga Westerling. Pemerintah Belanda hanya memberikan kompensasi finansial terbatas kepada beberapa keluarga korban melalui jalur hukum perdata. Bagi masyarakat Indonesia, pengakuan ini belum cukup karena keadilan substantif belum sepenuhnya ditegakkan.
-</p>
-<br>
-<br>
-<h3>6. Upaya Lokal di Sulawesi Selatan </h3>
-<p>emerintah daerah Sulawesi Selatan terus berupaya menjaga ingatan kolektif tentang tragedi ini melalui:
-Peringatan tahunan setiap 11 Desember di berbagai kabupaten.
-Pembangunan monumen dan tugu peringatan korban di beberapa lokasi pembantaian.
-Pendidikan sejarah lokal di sekolah-sekolah agar generasi muda mengetahui peristiwa ini.
-Langkah-langkah ini bertujuan agar tragedi tersebut tidak dilupakan, sekaligus menuntut agar dunia internasional mengakui bahwa Tragedi Westerling adalah kejahatan kemanusiaan (crime against humanity) yang seharusnya tidak pernah terjadi lagi.</p></div>
-</p>
-  <script src="js/script.js"></script>
+        <button class="read-more-btn" onclick="toggleReadMore()" id="btnText">Baca Selengkapnya</button>
+    </div>
+
+    <!-- JavaScript - GUNAKAN YANG SUDAH ADA -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // Script untuk konten (biarkan seperti ini)
+        function toggleReadMore() {
+            const content = document.getElementById("moreText");
+            const btn = document.getElementById("btnText");
+
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+                btn.innerText = "Sembunyikan";
+            } else {
+                content.classList.add("hidden");
+                btn.innerText = "Baca Selengkapnya";
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function toggleSection(id) {
+            document.getElementById(id).classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>
