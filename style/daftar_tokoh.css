@@ -25,7 +25,8 @@ body {
 
 body::before {
   content: "";
-  position: absolute;
+  /* ini jier yang ngebuat setengah gelap layar bangkep */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
