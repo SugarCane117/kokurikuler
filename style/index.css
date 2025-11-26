@@ -1,0 +1,65 @@
+/* ini buat teks web ini menceritakan gerak fed in */
+.teks-tengah {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards 0.5s;
+  -webkit-animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ini buat teks web ini menceritakan gerak fed in */
+
+/* teks welcome */
+.welcome-teks {
+  font-size: 48px;
+  animation: fadeInUp 1.5s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  font-size: 48px;
+  animation: fadeInUp 1.5s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* teks welcome */
+
+.dropdown-content {
+  margin-top: 7px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.1);
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 180px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

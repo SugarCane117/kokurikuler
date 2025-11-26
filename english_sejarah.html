@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+
+    <!-- CSS Responsif Navbar (FILE BARU) -->
+    <link rel="stylesheet" href="style/sejarah.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Gaya untuk konten - BIARKAN SEPERTI INI biar temen lu gak bingung */
+      .container {
+        max-width: 850px;
+        margin: 120px auto 40px auto;
+        background: #525252d2;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        margin-top: 30px;
+        color: #ffffff;
+        border-left: 4px solid #000000;
+        padding-left: 10px;
+      }
+
+      .mini-btn {
+        background: #2c2c2c;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        display: inline-block;
+        margin-top: 5px;
+      }
+
+      .mini-btn:hover {
+        background: #000000;
+      }
+
+      .read-more-btn {
+        background: #2c2c2c;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        display: block;
+        margin: 20px auto;
+      }
+
+      .read-more-btn:hover {
+        background: #000000;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      p {
+        text-align: justify;
+        color: #ffffff;
+      }
+
+      .divider {
+        margin: 25px 0;
+        height: 1px;
+        background: #2c2a2a;
+      }
+
+      img {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+      }
+
+      video {
+        border-radius: 20px;
+        display: block;
+        width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Overlay -->
+    <section>
+      <div class="latar"></div>
+    </section>
+
+    <!-- Header & Navigation - SUDAH DIPERBAIKI -->
+    <header>
+      <div class="isi atas">
+        <a href="index.html" class="logo">Westerling Massacre</a>
+
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu" id="nav-menu">
+          <li class="dropdown">
+            <a href="#">🌐Languange ↓</a>
+            <div class="dropdown-content">
+              <a href="indonesia_sejarah.html">Indonesian</a>
+              <a href="english_sejarah.html">English</a>
+            </div>
+          </li>
+          <li><a href="english_index.html">Homepage</a></li>
+          <li><a href="english_sejarah.html">History</a></li>
+          <li><a href="english_daftar_tokoh.html">Historical Figures</a></li>
+          <li><a href="english_profile.html">Our Members</a></li>
+          <li><a href="english_masukan.html">Feedback</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Content - BIARKAN SEPERTI INI -->
+    <div class="container">
+      <h1>The Westerling Massacre Tragedy</h1>
+
+      <p>
+        <video controls>
+          <source
+            src="video/Pembantaian Westerling, Sejarah Kelam di Sulawesi Selatan - Historia de Indonesia (720p, h264) (1).mp4"
+            type="video/mp4"
+          />
+        </video>
+        Indonesia’s Independence on August 17, 1945 did not immediately bring an
+        end to the nation’s struggle. The Westerling Tragedy stands as one of
+        the darkest chapters in Indonesian history.
+      </p>
+
+      <div class="divider"></div>
+
+      <div id="moreText" class="hidden">
+        <h3>
+          Initial Conditions of South Sulawesi After Independence (the end of
+          1945)
+        </h3>
+        <button class="mini-btn" onclick="toggleSection('sec1', this)">Next</button>
+        <div id="sec1" class="hidden">
+          <p>
+            <img src="image/Setelah.jpg" width="400" height="auto" /><br />
+            Following the proclamation of independence in 1945, the people of
+            South Sulawesi expressed their support for the Republic of
+            Indonesia. In various regions, such as Makassar, Parepare, Bone, and
+            Barru, they formed republican governments and resisted Dutch
+            attempts to regain power. However, when Allied and Dutch troops
+            landed in Makassar in late 1945, the situation began to change.
+            <br /><img src="image/nica.jpg" width="400" height="auto" />
+            The Dutch, through the NICA (Netherlands Indies Civil
+            Administration), attempted to regain control of the region. They
+            viewed the popular resistance as a threat to "public order." The
+            popular resistance, which employed guerrilla tactics in rural areas,
+            made it difficult for the Dutch to control the entire region.
+            Therefore, they decided to send special forces trained for this type
+            of warfare, the Depot Speciale Troepen (DST).
+          </p>
+        </div>
+
+        <h3>Arrival of Westerling's Troops (December 1946)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec2', this)">Next</button>
+        <div id="sec2" class="hidden">
+          <p>
+            <img src="image/raydandpt.jpg" width="400" height="auto" /><br />
+            In December 1946, Captain Raymond Westerling and his DST troops
+            arrived in Makassar. They arrived with a mission to crush a group
+            considered rebels and restore "security" to the South Sulawesi
+            region. However, Westerling's methods were utterly inhumane.
+            <br /><img src="image/westerling.jpg" width="400" height="auto" />
+            Westerling implemented a strategy he called the "Westerling method,"
+            an extreme military action involving gathering villagers in a
+            village, separating those suspected of involvement, and subjecting
+            them to violent interrogations. Anyone deemed guilty was shot on the
+            spot without trial. This brutal campaign began in several villages
+            around Tremboe (now Pinrang Regency) and then spread to other areas
+            such as Suppa, Parepare, Bulukumba, Enrekang, and Bone
+          </p>
+        </div>
+
+        <h3>Mass Execution (1946 - 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec3', this)">Next</button>
+        <div id="sec3" class="hidden">
+          <p>
+            <img src="image/operasi.jpg" width="400" height="auto" /><br />
+            Westerling's first operation was in Tremboe on December 11, 1946.
+            There, the villagers were gathered in the village square early in
+            the morning. The DST troops ordered all adult males to line up and
+            surrender their weapons. Afterward, they were interrogated one by
+            one. Anyone accused of being a member or supporter of the Republic
+            was immediately and publicly executed. Many were shot without any
+            evidence, based solely on suspicion or one-sided reports. Following
+            the operation in Tremboe,
+            <br /><img src="image/jalandesa.jpg" width="400" height="auto" />
+            Westerling continued his operations in other villages. In each
+            village, the same pattern was followed: Dutch troops searched
+            residents' homes, burned down houses suspected of harboring
+            fighters, and executed anyone accused of involvement in the
+            resistance movement. The bodies of the victims were left lying
+            without proper burials, as a form of terror to deter other villagers
+            from resisting. According to eyewitness accounts, Westerling himself
+            often led the executions. He stood before the line of villagers with
+            a pistol in his hand and shot the victims one by one in the head.
+            These sadistic acts were even witnessed by children and women. In
+            some cases, Westerling ordered local soldiers collaborating with the
+            Dutch to also shoot, to deter them from disobeying his orders.
+          </p>
+        </div>
+
+        <h3>Spread to Other Areas (January 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec4', this)">Next</button>
+        <div id="sec4" class="hidden">
+          <p>
+            <img src="image/jalan2.jpg" width="400" height="auto" /><br />
+            In January 1947, Operation DST expanded. The Barru, Enrekang, and
+            Bone regions became the next targets. In the Parepare area, hundreds
+            of residents were killed simply for their alleged links to the
+            Republican guerrilla forces. Villages suspected of harboring
+            fighters were razed to the ground. Westerling also formed a local
+            spy group tasked with reporting on anyone deemed "anti-Dutch."
+            However, these reports were often used for personal revenge,
+            resulting in many innocent people being executed. Within a short
+            time, thousands of people had become victims. Survivors described
+            the operation as being carried out with strict military discipline
+            and proceeding with incredible speed. In a single night, entire
+            villages could be depopulated. This violence continued for several
+            weeks without interruption
+          </p>
+        </div>
+
+        <h3>Reaction of the Republican Government (January-February 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec5', this)">Next</button>
+        <div id="sec5" class="hidden">
+          <p>
+            <img src="image/pemerintah.jpg" width="400" height="auto" /><br />
+            The Indonesian government, based in Yogyakarta at the time, could do
+            little because South Sulawesi was under Dutch occupation. However,
+            reports of Westerling's atrocities reached Republican leaders
+            through letters and testimonies from refugees. The Republican
+            government then strongly condemned these actions and presented them
+            as evidence of Dutch war crimes in international forums. Despite
+            this, the Dutch continued to try to cover up the incident. They
+            claimed that Westerling was only carrying out "security" measures
+            against rebels, not a massacre of civilians.
+          </p>
+        </div>
+
+        <h3>End of Operation (February 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec6', this)">Next</button>
+        <div id="sec6" class="hidden">
+          <p>
+            <img
+              src="image/sialmondpulangjir.jpg"
+              width="400"
+              height="auto"
+            /><br />
+            After approximately three months of military operations, Westerling
+            reported to his superiors that the situation in South Sulawesi was
+            "secure." The operation ended in February 1947, but what remained
+            was destruction, grief, and suffering for the people. Thousands of
+            families lost their lives, many villages were completely destroyed,
+            and deep trauma gripped the local community for years.
+            <br /><img src="image/almondbayi.jpg" width="400" height="auto" />
+            After the operation, Westerling was never tried for his brutal
+            actions. He was even returned to the Netherlands and lived a normal
+            life without punishment. This is clear evidence that the Dutch
+            colonial government turned a blind eye to these egregious human
+            rights violations. Despite this, the Indonesian people have never
+            forgotten this event. The tragedy of the Westerling Massacre
+            symbolizes the suffering and determination of the Indonesian people
+            in defending their independence from colonial rule.
+          </p>
+        </div>
+      </div>
+
+      <button class="read-more-btn" onclick="toggleReadMore()" id="btnText">
+        Show More
+      </button>
+    </div>
+    <footer>
+      <div class="isi">
+        <div class="isi-footer">
+          <div class="kolom-footer">
+            <h3>Contact</h3>
+            <p>Email: kodimxqtub@gmail.com</p>
+            <p>Telephone Number: +62 895-6227-19118</p>
+            <p>Address: SMK TUNAS MEDIA DEPOK</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript - GUNAKAN YANG SUDAH ADA -->
+    <script src="js/script.js"></script>
+
+    <script>
+      // tambahan buat lanjut dan sembunyikan
+      function toggleSection(id, btn) {
+        const section = document.getElementById(id);
+        section.classList.toggle("hidden");
+
+        // Ubah teks tombol
+        if (section.classList.contains("hidden")) {
+          btn.textContent = "Read More";
+        } else {
+          btn.textContent = "Hide";
+        }
+      }
+      // Script untuk konten (biarkan seperti ini)
+      function toggleReadMore() {
+        const content = document.getElementById("moreText");
+        const btn = document.getElementById("btnText");
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          btn.innerText = "Show Less";
+        } else {
+          content.classList.add("hidden");
+          btn.innerText = "Show More";
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>

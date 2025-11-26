@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sejarah</title>
+
+    <!-- CSS Responsif Navbar (FILE BARU) -->
+    <link rel="stylesheet" href="style/sejarah.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Gaya untuk konten - BIARKAN SEPERTI INI biar temen lu gak bingung */
+      .container {
+        max-width: 850px;
+        margin: 120px auto 40px auto;
+        background: #525252d2;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        margin-top: 30px;
+        color: #ffffff;
+        border-left: 4px solid #000000;
+        padding-left: 10px;
+      }
+
+      .mini-btn {
+        background: #2c2c2c;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .mini-btn:hover {
+        background: #000000;
+      }
+
+      .read-more-btn {
+        background: #2c2c2c;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        display: block;
+        margin: 20px auto;
+      }
+
+      .read-more-btn:hover {
+        background: #000000;
+      }
+      .hidden {
+        display: none;
+      }
+
+      p {
+        text-align: justify;
+        color: #ffffff;
+      }
+
+      .divider {
+        margin: 25px 0;
+        height: 1px;
+        background: #2c2a2a;
+      }
+
+      img {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+      }
+
+      video {
+        border-radius: 20px;
+        display: block;
+        width: 300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Background Overlay -->
+    <section>
+      <div class="latar"></div>
+    </section>
+
+    <!-- Header & Navigation - SUDAH DIPERBAIKI -->
+    <header>
+      <div class="isi atas">
+        <a href="index.html" class="logo">Pembantaian Westerling</a>
+
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu" id="nav-menu">
+          <li class="dropdown">
+            <a href="#">🌐Bahasa ↓</a>
+            <div class="dropdown-content">
+              <a href="indonesia_sejarah.html">Indonesian</a>
+              <a href="english_sejarah.html">English</a>
+            </div>
+          </li>
+          <li><a href="indonesia_index.html">Beranda</a></li>
+          <li><a href="indonesia_sejarah.html">Sejarah</a></li>
+          <li><a href="indonesia_daftar_tokoh.html">Tokoh Sejarah</a></li>
+          <li><a href="indonesia_profile.html">Anggota Kami</a></li>
+          <li><a href="indonesia_masukan.html">Ulasan</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Content - BIARKAN SEPERTI INI -->
+    <div class="container">
+      <h1>Tragedi Pembantaian Westerling</h1>
+
+      <p>
+        <video controls>
+          <source
+            src="video/Pembantaian Westerling, Sejarah Kelam di Sulawesi Selatan - Historia de Indonesia (720p, h264) (1).mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        Kemerdekaan Indonesia pada 17 Agustus 1945 tidak serta-merta mengakhiri
+        perjuangan bangsa. Tragedi Westerling adalah salah satu peristiwa paling
+        kelam dalam sejarah Indonesia.
+      </p>
+
+      <div class="divider"></div>
+
+      <div id="moreText" class="hidden">
+        <h3>
+          Kondisi Awal Sulawesi Selatan Setelah Kemerdekaan (akhir tahun 1945)
+        </h3>
+        <button class="mini-btn" onclick="toggleSection('sec1', this)">
+          Lanjut
+        </button>
+        <div id="sec1" class="hidden">
+          <p>
+            <img src="image/Setelah.jpg" width="400" height="auto" /><br />
+            Setelah proklamasi kemerdekaan 1945, rakyat Sulawesi Selatan
+            menyatakan dukungannya terhadap Republik Indonesia. Di berbagai
+            daerah seperti Makassar, Parepare, Bone, dan Barru, rakyat membentuk
+            pemerintahan Republik dan melakukan perlawanan terhadap upaya
+            Belanda yang ingin kembali berkuasa. Namun, ketika pasukan Sekutu
+            dan Belanda mendarat di Makassar pada akhir tahun 1945, situasi
+            mulai berubah.<br /><img
+              src="image/nica.jpg"
+              width="400"
+              height="auto"
+            />
+            Belanda, melalui NICA (<i
+              >Nederlandsch-Indische Civiele Administratie</i
+            >), berusaha merebut kembali kendali pemerintahan di daerah
+            tersebut. Mereka menganggap perlawanan rakyat sebagai ancaman
+            terhadap “ketertiban umum”. Perlawanan rakyat yang menggunakan
+            taktik gerilya di pedesaan membuat Belanda kesulitan menguasai
+            seluruh wilayah. Karena itu, mereka memutuskan untuk mengirim
+            pasukan khusus yang terlatih menghadapi perang semacam ini, yaitu
+            <i>Depot Speciale Troepen</i> (DST).
+          </p>
+        </div>
+
+        <h3>Kedatangan Pasukan Westerling (Desember 1946)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec2', this)">
+          Lanjut
+        </button>
+        <div id="sec2" class="hidden">
+          <p>
+            <img src="image/raydandpt.jpg" width="400" height="auto" /><br />
+            Pada bulan Desember 1946, Kapten Raymond Westerling beserta pasukan
+            <i>Depot Speciale Troepen</i> (DST) tiba di Makassar. Mereka datang
+            dengan misi untuk menumpas kelompok yang dianggap pemberontak dan
+            mengembalikan “keamanan” di wilayah Sulawesi Selatan. Namun, cara
+            yang digunakan Westerling sama sekali tidak manusiawi.<br />
+            <img src="image/westerling.jpg" width="400" height="auto" />
+            Westerling menerapkan strategi yang disebutnya “<i
+              >Westerling Methode</i
+            >”, yaitu tindakan militer ekstrem dengan cara mengumpulkan penduduk
+            di suatu desa, memisahkan mereka yang dicurigai, lalu melakukan
+            interogasi dengan kekerasan. Siapa pun yang dianggap bersalah akan
+            ditembak mati di tempat tanpa pengadilan. Aksi brutal ini dimulai di
+            beberapa desa di sekitar Tremboe (sekarang Kabupaten Pinrang), lalu
+            meluas ke wilayah Suppa, Parepare, Bulukumba, Enrekang, dan Bone.
+            Setiap daerah yang didatangi pasukan DST menjadi sasaran operasi
+            keras dan tidak berperikemanusiaan.
+          </p>
+        </div>
+
+        <h3>Eksekusi Massal(1946 - 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec3', this)">
+          Lanjut
+        </button>
+        <div id="sec3" class="hidden">
+          <p>
+            <img src="image/operasi.jpg" width="400" height="auto" /><br />
+            Operasi pertama dilakukan Westerling di Tremboe pada 11 Desember
+            1946. Di tempat ini, penduduk dikumpulkan di lapangan desa pada pagi
+            hari. Pasukan DST memerintahkan semua laki-laki dewasa untuk
+            berbaris dan menyerahkan senjata. Setelah itu, mereka diinterogasi
+            satu per satu. Siapa pun yang dituduh sebagai anggota atau pendukung
+            Republik langsung dieksekusi di depan umum. Banyak dari mereka yang
+            ditembak tanpa bukti apa pun, hanya berdasarkan dugaan atau laporan
+            sepihak. Setelah operasi di Tremboe,
+            <br /><img src="image/jalandesa.jpg" width="400" height="auto" />
+            Westerling melanjutkan aksinya ke desa-desa lain. Di setiap desa,
+            pola yang sama selalu terjadi pasukan Belanda menggeledah rumah
+            penduduk, membakar rumah yang dicurigai menampung pejuang, serta
+            mengeksekusi siapa pun yang dituduh terlibat dalam gerakan
+            perlawanan. Mayat korban dibiarkan tergeletak tanpa dikubur dengan
+            layak, sebagai bentuk teror agar penduduk desa lain takut untuk
+            melawan. Menurut laporan dari berbagai saksi mata, Westerling
+            sendiri sering memimpin langsung eksekusi tersebut. Ia berdiri di
+            depan barisan penduduk dengan pistol di tangannya dan menembak
+            korban satu per satu di kepala. Aksi sadis ini bahkan disaksikan
+            oleh anak-anak dan perempuan. Dalam beberapa kasus, Westerling
+            memerintahkan tentara lokal yang bekerja sama dengan Belanda untuk
+            ikut menembak, agar mereka merasa takut melawan perintahnya
+          </p>
+        </div>
+
+        <h3>Menyebar Ke Daerah Lain (Januari 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec4', this)">
+          Lanjut
+        </button>
+        <div id="sec4" class="hidden">
+          <p>
+            <img src="image/jalan2.jpg" width="400" height="auto" /><br />
+            Pada bulan Januari 1947, operasi DST semakin meluas. Wilayah Barru,
+            Enrekang, dan Bone menjadi sasaran berikutnya. Di daerah Parepare,
+            ratusan penduduk dibunuh hanya karena dianggap berhubungan dengan
+            pasukan gerilya Republik. Desa-desa yang dicurigai menjadi tempat
+            persembunyian pejuang dibumihanguskan. Westerling juga membentuk
+            kelompok mata-mata lokal yang bertugas melaporkan siapa saja yang
+            dianggap “anti-Belanda”. Namun, laporan tersebut sering digunakan
+            untuk balas dendam pribadi, sehingga banyak orang yang tidak
+            bersalah akhirnya dieksekusi. Dalam waktu singkat, ribuan orang
+            menjadi korban. Penduduk yang selamat menceritakan bahwa operasi
+            dilakukan dengan disiplin militer yang tinggi dan berlangsung sangat
+            cepat. Dalam satu malam, satu desa bisa habis penduduknya. Aksi
+            kekerasan ini berlangsung terus-menerus selama beberapa minggu tanpa
+            henti.
+          </p>
+        </div>
+
+        <h3>Reaksi Pemerintah Republik (Januari-Februari 1947)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec5', this)">
+          Lanjut
+        </button>
+        <div id="sec5" class="hidden">
+          <p>
+            <img src="image/pemerintah.jpg" width="400" height="auto" /><br />
+            Pemerintah Republik Indonesia yang berkedudukan di Yogyakarta saat
+            itu tidak bisa berbuat banyak karena Sulawesi Selatan berada di
+            bawah pendudukan Belanda. Namun, laporan mengenai kekejaman
+            Westerling sampai ke tangan para pemimpin Republik melalui surat dan
+            kesaksian para pengungsi. Pemerintah Republik kemudian mengecam
+            keras tindakan tersebut dan menjadikannya bukti kejahatan perang
+            Belanda di forum internasional. Meskipun begitu, Belanda tetap
+            berusaha menutupi peristiwa tersebut. Mereka mengklaim bahwa
+            Westerling hanya melakukan tindakan “keamanan” untuk melawan
+            pemberontak, bukan pembantaian terhadap rakyat sipil.
+          </p>
+        </div>
+
+        <h3>Akhir Operasi (1947 Februari)</h3>
+        <button class="mini-btn" onclick="toggleSection('sec6', this)">
+          Lanjut
+        </button>
+        <div id="sec6" class="hidden">
+          <p>
+            <img
+              src="image/sialmondpulangjir.jpg"
+              width="400"
+              height="auto"
+            /><br />
+            Setelah sekitar tiga bulan melakukan operasi militer, Westerling
+            melaporkan kepada atasannya bahwa situasi di Sulawesi Selatan sudah
+            “aman”. Operasi berakhir pada Februari 1947, namun yang tersisa
+            hanyalah kehancuran, duka, dan penderitaan rakyat. Ribuan keluarga
+            kehilangan anggota, banyak desa hancur total, dan trauma mendalam
+            menyelimuti masyarakat setempat selama bertahun-tahun.
+            <br /><img src="image/almondbayi.jpg" width="400" height="auto" />
+            Setelah operasi berakhir, Westerling tidak pernah diadili atas
+            tindakan brutalnya. Ia bahkan dipulangkan ke Belanda dan menjalani
+            kehidupan normal tanpa hukuman. Hal ini menjadi bukti nyata bahwa
+            pemerintah kolonial Belanda menutup mata terhadap pelanggaran hak
+            asasi manusia yang sangat berat. Meskipun demikian, rakyat Indonesia
+            tidak pernah melupakan peristiwa ini. Tragedi Pembantaian Westerling
+            menjadi simbol penderitaan dan keteguhan rakyat Indonesia dalam
+            mempertahankan kemerdekaan dari penjajahan.
+          </p>
+        </div>
+      </div>
+
+      <button class="read-more-btn" onclick="toggleReadMore()" id="btnText">
+        Baca Selengkapnya
+      </button>
+    </div>
+    <footer>
+      <div class="isi">
+        <div class="isi-footer">
+          <div class="kolom-footer">
+            <h3>Kontak</h3>
+            <p>Email: kodimxqtub@gmail.com</p>
+            <p>Nomor Telepon: +62 895-6227-19118</p>
+            <p>Alamat: SMK TUNAS MEDIA DEPOK</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript - GUNAKAN YANG SUDAH ADA -->
+    <script src="js/script.js"></script>
+
+    <script>
+      // tambahan buat lanjut dan sembunyikan
+      function toggleSection(id, btn) {
+        const section = document.getElementById(id);
+        section.classList.toggle("hidden");
+
+        // Ubah teks tombol
+        if (section.classList.contains("hidden")) {
+          btn.textContent = "Lanjut";
+        } else {
+          btn.textContent = "Sembunyikan";
+        }
+      }
+      // Script untuk konten (biarkan seperti ini)
+      function toggleReadMore() {
+        const content = document.getElementById("moreText");
+        const btn = document.getElementById("btnText");
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          btn.innerText = "Sembunyikan";
+        } else {
+          content.classList.add("hidden");
+          btn.innerText = "Baca Selengkapnya";
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>

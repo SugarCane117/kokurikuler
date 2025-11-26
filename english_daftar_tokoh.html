@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figures</title>
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/daftar_tokoh.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
+    <style>
+      .judul-halaman {
+        text-align: center;
+        color: white;
+        margin-top: 100px;
+        font-size: 2.5rem;
+      }
+
+      .card-container-6 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom per baris */
+        gap: 55px;
+        padding: 20px 40px;
+        max-width: 950px;
+        margin: auto;
+      }
+
+      .card {
+        background: #383838e3;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+      }
+
+      .card img {
+        width: 100%;
+        height: 260px; /* lebih tinggi agar gambar proporsional */
+        object-fit: cover; /* menjaga proporsi dan crop rapi */
+        object-position: center;
+        display: block;
+      }
+
+      .isi_card {
+        padding: 15px 18px;
+      }
+
+      .isi_card h3 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .isi_card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #eeecec;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .mini-btn {
+        background: #2c2c2c;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.3s;
+        display: inline-block;
+        margin-top: 5px;
+      }
+
+      .mini-btn:hover {
+        background: #000000;
+      }
+      p {
+        text-align: justify;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="isi atas">
+        <a href="index.html" class="logo">Westerling Massacre</a>
+
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu" id="nav-menu">
+          <li class="dropdown">
+            <a href="#">🌐Languange ↓</a>
+            <div class="dropdown-content">
+              <a href="indonesia_daftar_tokoh.html">Indonesian</a>
+              <a href="english_daftar_tokoh.html">English</a>
+            </div>
+          </li>
+          <li><a href="english_index.html">Homepage</a></li>
+          <li><a href="english_sejarah.html">History</a></li>
+          <li><a href="english_daftar_tokoh.html">Historical Figures</a></li>
+          <li><a href="english_profile.html">Our Members</a></li>
+          <li><a href="english_masukan.html">Feedback</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="judul-halaman">
+        List of Figures in the Westerling Massacre Tragedy
+      </h1>
+
+      <div class="card-container-6">
+        <div class="card">
+          <img src="image/mukasetan.jpg" alt="Rokus Bernardus Orie" />
+          <div class="isi_card">
+            <h3>Raymond Pierre Paul Westerling</h3>
+            <button
+              class="mini-btn"
+              onclick="toggleSectionMultiple(this,'sec1','sec2')"
+            >
+              See details ┈➤ˎˊ˗
+            </button>
+            <div id="sec1" class="hidden">
+              <p>
+                Raymond Pierre Paul Westerling was a Dutch military officer of
+                the Royal Netherlands East Indies Army. He orchestrated a
+                counter-guerrilla operation in Sulawesi during the Indonesian
+                National Revolution after World War II and participated in a
+                coup attempt against the Government of Indonesia in January
+                1950, a month after the official transfer of sovereignty. Both
+                actions were denounced as war crimes by the Indonesian
+                authorities. Born in the Ottoman Empire, despite his nickname,
+                The Turk, Westerling was of mixed Dutch and Greek descent.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="image/foto_tidak_di_temukan.jpg"
+            alt="Kolonel Willem Huibers"
+          />
+          <div class="isi_card">
+            <h3>Willem Huibers</h3>
+            <button
+              class="mini-btn"
+              onclick="toggleSectionMultiple(this,'sec1','sec2')"
+            >
+              See details ┈➤ˎˊ˗
+            </button>
+            <div id="sec2" class="hidden">
+              <p>
+                Colonel Willem Huibers was a senior KNIL officer who supported
+                Dutch security operations in Indonesia during 1946–1947. He was
+                involved in the planning and supervision of these operations,
+                with his photographs and documents preserved in the KNIL
+                archives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="image/spoor.jpg"
+            alt="Letnan Jenderal Simon Hendrik Spoor"
+          />
+          <div class="isi_card">
+            <h3>Simon Hendrik Spoor</h3>
+            <button
+              class="mini-btn"
+              onclick="toggleSectionMultiple(this,'sec3','sec4')"
+            >
+              See details ┈➤ˎˊ˗
+            </button>
+            <div id="sec3" class="hidden">
+              <p>
+                Simon Hendrik Spoor served as the Chief of Staff of the KNIL
+                Army (1946–1949) and held the highest military authority in
+                post-war Indonesia. He established security operation policies
+                that enabled harsh actions against resistance movements, with
+                his official photographs preserved in Dutch archives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="image/Dirk_Cornelis.jpg"
+            alt="Letjen Dirk Cornelis Buurman van Vreeden"
+          />
+          <div class="isi_card">
+            <h3>Dirk Cornelis Buurman van Vreeden</h3>
+            <button
+              class="mini-btn"
+              onclick="toggleSectionMultiple(this,'sec3','sec4')"
+            >
+              See details ┈➤ˎˊ˗
+            </button>
+            <div id="sec4" class="hidden">
+              <p>
+                Dirk Cornelis Buurman van Vreeden (1891–1962) served as the
+                Commander of the KNIL on the eve of World War II and played a
+                key role in the defense strategy of the Dutch East Indies.
+                Although his defensive efforts failed to prevent the Japanese
+                occupation, he remains an important figure in Dutch military
+                history.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="image/Louis_Beel_1958.jpg" alt="Louis Beel" />
+          <div class="isi_card">
+            <h3>Louis Beel</h3>
+            <button
+              class="mini-btn"
+              onclick="toggleSectionMultiple(this,'sec5','sec6')"
+            >
+              See details ┈➤ˎˊ˗
+            </button>
+            <div id="sec5" class="hidden">
+              <p>
+                Louis Beel was the Dutch High Representative of the Crown in
+                Indonesia after 1946, providing political legitimacy for Dutch
+                military operations. He supported the actions of special forces
+                and counter-guerrilla operations, with his official photographs
+                widely available in Dutch archives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="image/Hubertus_van_Mook.jpg"
+            alt="Hubertus Johannes van Mook"
+          />
+          <div class="isi_card">
+            <h3>Hubertus Johannes van Mook</h3>
+            <button
+              class="mini-btn"
+              onclick="toggleSectionMultiple(this,'sec5','sec6')"
+            >
+              See details ┈➤ˎˊ˗
+            </button>
+            <div id="sec6" class="hidden">
+              <p>
+                Hubertus Johannes van Mook was the Lieutenant Governor-General
+                of the Dutch East Indies who supported the strategy of “clearing
+                unstable areas” and the formation of special forces. His
+                colonial-era photographs are fully preserved in the KITLV and
+                Dutch archives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="isi">
+        <div class="isi-footer">
+          <div class="kolom-footer">
+            <h3>Contact</h3>
+            <p>Email: kodimxqtub@gmail.com</p>
+            <p>Telephone Number: +62 895-6227-19118</p>
+            <p>Address: SMK TUNAS MEDIA DEPOK</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleSectionMultiple(btn, ...ids) {
+        let isOpening = false;
+
+        // cek apakah minimal 1 masih hidden
+        ids.forEach((id) => {
+          if (document.getElementById(id).classList.contains("hidden")) {
+            isOpening = true;
+          }
+        });
+
+        // buka / tutup semua section
+        ids.forEach((id) => {
+          const sec = document.getElementById(id);
+          if (isOpening) sec.classList.remove("hidden");
+          else sec.classList.add("hidden");
+        });
+
+        // CARI semua tombol yang memanggil pasangan section yang sama
+        const allButtons = document.querySelectorAll("button.mini-btn");
+        allButtons.forEach((b) => {
+          const onclick = b.getAttribute("onclick");
+          if (!onclick) return;
+
+          // cek apakah tombol ini punya ID yang sama
+          let match = true;
+          ids.forEach((id) => {
+            if (!onclick.includes("'" + id + "'")) {
+              match = false;
+            }
+          });
+
+          // kalau tombol cocok, ubah teks juga
+          if (match) {
+            b.textContent = isOpening
+              ? "Hide details ┈➤ˎˊ˗"
+              : "See details ┈➤ˎˊ˗";
+          }
+        });
+      }
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

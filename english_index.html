@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <!-- link hubung style/index.css -->
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* font */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: "Poppins", sans-serif;
+      }
+      /* font */
+      body {
+        background-image: url(image/PETA.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        line-height: 1.6;
+        overflow-x: hidden;
+        min-height: 100vh;
+      }
+
+      .isi {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .dropdown-content {
+        margin-top: 7px;
+        border-radius: 10px;
+        color: rgba(255, 255, 255, 0.1);
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.336);
+        min-width: 180px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        display: block;
+        color: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        text-decoration: none;
+      }
+
+      .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.336);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .atas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+      }
+
+      /* MENU DESKTOP */
+      .menu {
+        display: flex;
+        list-style: none;
+      }
+
+      .menu li {
+        margin-left: 30px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+        padding: 8px 16px;
+        border-radius: 5px;
+      }
+
+      .menu a:hover {
+        color: #ccc;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      /* HAMBURGER MENU MOBILE */
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 3px 0;
+        transition: 0.3s;
+      }
+
+      .utama {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 80px; /* Space for fixed header */
+      }
+
+      .latar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.807), rgba(0, 0, 0, 0.7));
+        z-index: -1;
+      }
+
+      .utama h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .utama p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #ddd;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .tombol {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all 0.3s;
+        border: 2px solid white;
+      }
+
+      .tombol:hover {
+        background-color: transparent;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 60px 0 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .isi-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .kolom-footer h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .kolom-footer h3::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background-color: white;
+      }
+
+      .kolom-footer p,
+      .kolom-footer a {
+        color: #ccc;
+        margin-bottom: 10px;
+        display: block;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .kolom-footer a:hover {
+        color: white;
+      }
+
+      /* ==================== */
+      /* RESPONSIVE FIXES */
+      /* ==================== */
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: flex;
+        }
+
+        .menu {
+          position: fixed;
+          top: 70px;
+          left: -100%;
+          width: 100%;
+          height: calc(100vh - 70px);
+          background: rgba(0, 0, 0, 0.9);
+          backdrop-filter: blur(20px);
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding-top: 50px;
+          transition: left 0.3s ease;
+        }
+
+        .menu.active {
+          left: 0;
+        }
+
+        .menu li {
+          margin: 15px 0;
+        }
+
+        .menu a {
+          font-size: 18px;
+          padding: 12px 30px;
+        }
+
+        .utama h1 {
+          font-size: 32px;
+          padding: 0 20px;
+        }
+
+        .utama p {
+          font-size: 16px;
+          padding: 0 20px;
+        }
+
+        .tombol {
+          padding: 12px 25px;
+          font-size: 16px;
+        }
+
+        .logo {
+          font-size: 20px;
+        }
+
+        header {
+          padding: 12px 0;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .utama h1 {
+          font-size: 28px;
+        }
+
+        .utama p {
+          font-size: 14px;
+        }
+
+        .isi {
+          padding: 0 15px;
+        }
+
+        .logo {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="isi atas">
+        <a href="index.html" class="logo">Westerling Massacre</a>
+
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="menu" id="nav-menu">
+          <li class="dropdown">
+            <a href="#">🌐Languange ↓</a>
+            <div class="dropdown-content">
+              <a href="indonesia_index.html">Indonesian</a>
+              <a href="english_index.html">English</a>
+            </div>
+          </li>
+          <li><a href="english_index.html">Homepage</a></li>
+          <li><a href="english_sejarah.html">History</a></li>
+          <li><a href="english_daftar_tokoh.html">Historical Figures</a></li>
+          <li><a href="english_profile.html">Our Members</a></li>
+          <li><a href="english_masukan.html">Feedback</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="utama">
+      <div class="latar"></div>
+      <div class="isi">
+        <div class="welcome-teks">
+          <h1>The Westerling <span>Massacre Tragedy</span><br /></h1>
+        </div>
+        <p class="teks-tengah">
+          The Westerling Massacre of 1946–1947 was a dark tragedy in which Dutch
+          special forces under the command of Raymond Westerling slaughtered
+          thousands of innocent civilians in South Sulawesi.
+        </p>
+        <a href="english_sejarah.html" class="tombol">Read More</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="isi">
+        <div class="isi-footer">
+          <div class="kolom-footer">
+            <h3>Contact</h3>
+            <p>Email: kodimxqtub@gmail.com</p>
+            <p>Telephone Number: +62 895-6227-19118</p>
+            <p>Address: SMK TUNAS MEDIA DEPOK</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

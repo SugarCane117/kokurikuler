@@ -1,0 +1,329 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* styling  furqon tu spasi 3 kali buat jarak :V */
+
+/* header */
+/* isi,atas,logo,menu,menutogle,mobilemenu,menu,navmenu */
+/* navbar mobile + dekstop */
+header {
+  /* ini cui kampret bet gw cariin bagian navbar item ireng  */
+  background-color: rgba(0, 0, 0, 0.336);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  top: 0;
+}
+
+.isi {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dropdown-content {
+  margin-top: 7px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.336);
+  min-width: 180px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+/* disini dah keliatan perbedaanya navbar sejejer
+dengan teks, ga kelebihan */
+
+.menu a:hover {
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* navbar dah mulai rapih teks nya dah putih */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+/* kbagian styling biar smooth */
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+  }
+
+  /* dicari class nya ga nemu ternyata ada di index.html soalnya ngehubung :V */
+  /* ini buat liat navbar hp pas diklik */
+  .menu.active {
+    left: 0;
+  }
+
+  /* buat kasih jarak ternyata si navbar mobilenya hahah */
+  .menu li {
+    margin: 15px 0;
+  }
+
+  .menu a {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .header-nav {
+    padding: 12px 0;
+  }
+}
+
+header {
+  padding: 12px 0;
+}
+
+@media (max-width: 480px) {
+  .isi {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
+/* navbar mobile + dekstop */
+/* okeh dah selesai bagian navbar atas */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../image/PETA.jpeg") center/cover fixed;
+  color: #fff;
+  padding-top: 80px;
+}
+
+/* ==================== */
+/* FEEDBACK CONTAINER - IMPROVED */
+/* ==================== */
+.form-container {
+  width: 95%;
+  max-width: 800px;
+  height: 85vh;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(22, 22, 22, 0.95);
+  border: 1px solid #333;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Glow effect on hover */
+.form-container:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  border-color: #444;
+}
+
+/* Iframe styling */
+.form-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Custom scrollbar for iframe */
+.form-container iframe::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-container iframe::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+.form-container iframe::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.form-container iframe::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ==================== */
+/* FEEDBACK TITLE - ADDED */
+/* ==================== */
+.feedback-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2.2rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* ==================== */
+/* RESPONSIVE DESIGN */
+/* ==================== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .menu li {
+    margin: 15px 0;
+  }
+
+  .menu a {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  /* Mobile optimization for form */
+  .form-container {
+    height: 75vh;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .feedback-title {
+    font-size: 1.8rem;
+  }
+
+  .feedback-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .isi {
+    padding: 0 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .form-container {
+    height: 70vh;
+    padding: 10px;
+  }
+
+  .feedback-title {
+    font-size: 1.5rem;
+  }
+}
