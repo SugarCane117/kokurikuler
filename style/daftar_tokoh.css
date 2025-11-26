@@ -6,8 +6,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+<<<<<<< HEAD
 body {
   background-image: url("../image/PETA.jpeg");
+=======
+
+body {
+  background-image: url('../image/PETA.jpeg');
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,6 +26,11 @@ body {
   /* margin: 0; */
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 body::before {
   content: "";
   /* ini jier yang ngebuat setengah gelap layar bangkep */
@@ -32,6 +43,10 @@ body::before {
   z-index: -1;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 /* ini bagian navbar gw aja yaa lu fokus ke chard aja */
 .latar {
   position: fixed;
@@ -43,6 +58,7 @@ body::before {
   z-index: -1;
 }
 
+<<<<<<< HEAD
 .isi {
   max-width: 1500px;
   margin: 0 auto;
@@ -74,11 +90,26 @@ body::before {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+=======
+
+
+.isi {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 0px;
+}
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 
 /* navbar */
 header {
   /* ini cui kampret bet gw cariin bagian navbar item ireng  */
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.336);
+=======
+  background-color: rgba(0, 0, 0, 0.807);
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
@@ -88,12 +119,22 @@ header {
   top: 0;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .atas {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -101,21 +142,35 @@ header {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 /* ini bagian layar dekstopnya cuiii yahah puyeng ah */
 .menu {
   display: flex;
   list-style: none;
 }
 
+<<<<<<< HEAD
 .menu {
   display: flex;
   list-style: none;
 }
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 
 .menu li {
   margin-left: 30px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu a {
   color: white;
   text-decoration: none;
@@ -125,11 +180,21 @@ header {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu a:hover {
   color: #ccc;
   background: rgba(255, 255, 255, 0.1);
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 /* ini bagian navbar gw aja yaa lu fokus ke chard aja */
 /* sekarang mobile menu nya cui yahaha  */
 .menu-toggle {
@@ -138,6 +203,11 @@ header {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu-toggle span {
   width: 25px;
   height: 3px;
@@ -167,32 +237,65 @@ header {
     transition: left 0.3s ease;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu.active {
     left: 0;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu li {
     margin: 15px 0;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu a {
     font-size: 18px;
     padding: 12px 30px;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .logo {
     font-size: 20px;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .header-nav {
     padding: 12px 0;
   }
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 header {
   padding: 12px 0;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 @media (max-width: 480px) {
   .isi {
     padding: 0 15px;
@@ -203,3 +306,7 @@ header {
 }
 
 /* sekarang mobile menu nya cui yahaha  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e

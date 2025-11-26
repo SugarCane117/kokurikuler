@@ -8,7 +8,11 @@
 }
 
 body {
+<<<<<<< HEAD
   background-image: url("../image/PETA.jpeg");
+=======
+  background-image: url('../image/PETA.jpeg');
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,7 +33,11 @@ body {
 }
 
 .isi {
+<<<<<<< HEAD
   max-width: 1500px;
+=======
+  max-width: 1200px;
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -68,10 +76,20 @@ header {
   list-style: none;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu li {
   margin-left: 30px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu a {
   color: white;
   text-decoration: none;
@@ -81,6 +99,11 @@ header {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu a:hover {
   color: #ccc;
   background: rgba(255, 255, 255, 0.1);
@@ -129,19 +152,38 @@ header {
     left: 0;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu li {
     margin: 15px 0;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu a {
     font-size: 18px;
     padding: 12px 30px;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .logo {
     font-size: 20px;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .header-nav {
     padding: 12px 0;
   }
@@ -151,6 +193,11 @@ header {
   padding: 12px 0;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 @media (max-width: 480px) {
   .isi {
     padding: 0 15px;
@@ -159,6 +206,7 @@ header {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
 
 .dropdown-content {
   /* ini margin coma buat kasih jarak*/
@@ -187,3 +235,5 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+=======
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e

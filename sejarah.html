@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragedi Pembantaian Westerling 1946–1947</title>
+
+    <!-- CSS Responsif Navbar (FILE BARU) -->
+    <link rel="stylesheet" href="style/sejarah.css">
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Gaya untuk konten - BIARKAN SEPERTI INI biar temen lu gak bingung */
+        .container {
+            max-width: 850px;
+            margin: 120px auto 40px auto;
+            background: #525252d2;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #ffffff;
+            border-left: 4px solid #000000;
+            padding-left: 10px;
+        }
+
+        .read-more-btn, .mini-btn {
+            background: #2c2c2c;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .read-more-btn:hover, .mini-btn:hover {
+            background: #000000;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        p {
+            text-align: justify;
+            color: #ffffff;
+        }
+
+        .divider {
+            margin: 25px 0;
+            height: 1px;
+            background: #2c2a2a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Overlay -->
+    <section>
+        <div class="latar"></div>
+    </section>
+
+    <!-- Header & Navigation - SUDAH DIPERBAIKI -->
+    <header>
+        <div class="isi atas">
+            <a href="index.html" class="logo">Pembantaian Westerling</a>
+
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="menu" id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="daftar_tokoh.html">Tokoh Sejarah</a></li>
+                <li><a href="profile.html">Anggota Kami</a></li>
+                <li><a href="masukan.html">Feedback</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content - BIARKAN SEPERTI INI -->
+    <div class="container">
+        <h1>Tragedi Pembantaian Westerling 1946–1947</h1>
+
+        <p>
+            Kemerdekaan Indonesia pada 17 Agustus 1945 tidak serta-merta mengakhiri perjuangan bangsa.
+            Tragedi Westerling adalah salah satu peristiwa paling kelam dalam sejarah Indonesia.
+        </p>
+
+        <div class="divider"></div>
+
+        <div id="moreText" class="hidden">
+
+            <h3>1. Kondisi Awal Sulawesi Selatan Setelah Kemerdekaan</h3>
+            <button class="mini-btn" onclick="toggleSection('sec1')">Lanjut</button>
+            <div id="sec1" class="hidden">
+                <p>(Isi lengkap bagian 1 ditempatkan di sini)</p>
+            </div>
+
+            <h3>2. Kedatangan Pasukan Westerling</h3>
+            <button class="mini-btn" onclick="toggleSection('sec2')">Lanjut</button>
+            <div id="sec2" class="hidden">
+                <p>(Isi lengkap bagian 2 ditempatkan di sini)</p>
+            </div>
+
+            <h3>3. Eksekusi Massal</h3>
+            <button class="mini-btn" onclick="toggleSection('sec3')">Lanjut</button>
+            <div id="sec3" class="hidden">
+                <p>(Isi lengkap bagian 3 ditempatkan di sini)</p>
+            </div>
+
+            <h3>4. Penyebaran Ke Daerah Lain</h3>
+            <button class="mini-btn" onclick="toggleSection('sec4')">Lanjut</button>
+            <div id="sec4" class="hidden">
+                <p>(Isi lengkap bagian 4 ditempatkan di sini)</p>
+            </div>
+
+            <h3>5. Reaksi Pemerintah Republik</h3>
+            <button class="mini-btn" onclick="toggleSection('sec5')">Lanjut</button>
+            <div id="sec5" class="hidden">
+                <p>(Isi lengkap bagian 5 ditempatkan di sini)</p>
+            </div>
+
+            <h3>6. Akhir Operasi</h3>
+            <button class="mini-btn" onclick="toggleSection('sec6')">Lanjut</button>
+            <div id="sec6" class="hidden">
+                <p>(Isi lengkap bagian 6 ditempatkan di sini)</p>
+            </div>
+
+        </div>
+
+        <button class="read-more-btn" onclick="toggleReadMore()" id="btnText">Baca Selengkapnya</button>
+    </div>
+
+    <!-- JavaScript - GUNAKAN YANG SUDAH ADA -->
+    <script src="js/script.js"></script>
+
+    <script>
+        // Script untuk konten (biarkan seperti ini)
+        function toggleReadMore() {
+            const content = document.getElementById("moreText");
+            const btn = document.getElementById("btnText");
+
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+                btn.innerText = "Sembunyikan";
+            } else {
+                content.classList.add("hidden");
+                btn.innerText = "Baca Selengkapnya";
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function toggleSection(id) {
+            document.getElementById(id).classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

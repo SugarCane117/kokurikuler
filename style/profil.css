@@ -20,24 +20,38 @@
 /* NAVBAR STYLE SAMA KAYAK INDEX.HTML */
 /* ==================== */
 
+<<<<<<< HEAD
 header {
   /* ini cui kampret bet gw cariin bagian navbar item ireng  */
   background-color: rgba(0, 0, 0, 0.336);
+=======
+.header-nav {
+  background-color: rgba(0, 0, 0, 0.485);
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   z-index: 1000;
   padding: 15px 0;
+<<<<<<< HEAD
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   top: 0;
 }
 
 .isi {
   max-width: 1500px;
+=======
+  border-bottom: 1px solid rgba(0, 0, 0, 0.78);
+}
+
+.isi {
+  max-width: 1200px;
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   margin: 0 auto;
   padding: 0 20px;
 }
 
+<<<<<<< HEAD
 .dropdown-content {
   margin-top: 7px;
   border-radius: 10px;
@@ -64,6 +78,8 @@ header {
   display: block;
 }
 
+=======
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .atas {
   display: flex;
   justify-content: space-between;
@@ -163,7 +179,11 @@ header {
   .isi {
     padding: 0 15px;
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .logo {
     font-size: 18px;
   }

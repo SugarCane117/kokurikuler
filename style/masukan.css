@@ -8,12 +8,20 @@
 
 /* styling  furqon tu spasi 3 kali buat jarak :V */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 /* header */
 /* isi,atas,logo,menu,menutogle,mobilemenu,menu,navmenu */
 /* navbar mobile + dekstop */
 header {
   /* ini cui kampret bet gw cariin bagian navbar item ireng  */
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.336);
+=======
+  background-color: rgba(0, 0, 0, 0.807);
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
@@ -23,6 +31,7 @@ header {
   top: 0;
 }
 
+<<<<<<< HEAD
 .isi {
   max-width: 1500px;
   margin: 0 auto;
@@ -54,6 +63,18 @@ header {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+=======
+
+
+.isi {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 0px;
+}
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 
 .atas {
   display: flex;
@@ -61,6 +82,11 @@ header {
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -68,15 +94,30 @@ header {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu {
   display: flex;
   list-style: none;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu li {
   margin-left: 30px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu a {
   color: white;
   text-decoration: none;
@@ -94,6 +135,10 @@ dengan teks, ga kelebihan */
 }
 /* navbar dah mulai rapih teks nya dah putih */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -101,6 +146,10 @@ dengan teks, ga kelebihan */
 }
 /* kbagian styling biar smooth */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 .menu-toggle span {
   width: 25px;
   height: 3px;
@@ -109,11 +158,21 @@ dengan teks, ga kelebihan */
   transition: 0.3s;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu {
     position: fixed;
     top: 70px;
@@ -129,40 +188,81 @@ dengan teks, ga kelebihan */
     transition: left 0.3s ease;
   }
 
+<<<<<<< HEAD
   /* dicari class nya ga nemu ternyata ada di index.html soalnya ngehubung :V */
   /* ini buat liat navbar hp pas diklik */
+=======
+
+/* dicari class nya ga nemu ternyata ada di index.html soalnya ngehubung :V */
+/* ini buat liat navbar hp pas diklik */
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu.active {
     left: 0;
   }
 
+<<<<<<< HEAD
   /* buat kasih jarak ternyata si navbar mobilenya hahah */
+=======
+
+/* buat kasih jarak ternyata si navbar mobilenya hahah */
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu li {
     margin: 15px 0;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .menu a {
     font-size: 18px;
     padding: 12px 30px;
   }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .logo {
     font-size: 20px;
   }
 
+<<<<<<< HEAD
   .header-nav {
     padding: 12px 0;
   }
 }
 
+=======
+
+  .header-nav {
+    padding: 12px 0; 
+  }
+}
+
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 header {
   padding: 12px 0;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
 @media (max-width: 480px) {
   .isi {
     padding: 0 15px;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   .logo {
     font-size: 18px;
   }
@@ -170,11 +270,21 @@ header {
 /* navbar mobile + dekstop */
 /* okeh dah selesai bagian navbar atas */
 
+<<<<<<< HEAD
 body {
   margin: 0;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../image/PETA.jpeg") center/cover fixed;
+=======
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('../image/PETA.jpeg') center/cover fixed;
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   color: #fff;
   padding-top: 80px;
 }
@@ -192,7 +302,12 @@ body {
   border: 1px solid #333;
   border-radius: 20px;
   overflow: hidden;
+<<<<<<< HEAD
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+=======
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5),
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
     0 0 0 1px rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
   position: relative;
@@ -200,7 +315,13 @@ body {
 
 /* Glow effect on hover */
 .form-container:hover {
+<<<<<<< HEAD
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+=======
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(255, 255, 255, 0.1);
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
   transform: translateY(-5px);
   border-color: #444;
 }
@@ -326,4 +447,8 @@ body {
   .feedback-title {
     font-size: 1.5rem;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d3eb517f57b3b99ba84cd1bf98a6fd1ee596ec6e
